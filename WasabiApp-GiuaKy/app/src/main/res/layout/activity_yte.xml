@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityYTe"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:text="THÔNG BÁO"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnTatCa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tất cả"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/button"/>
+            <Button
+                android:id="@+id/btnLichKham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lịch khám"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="@color/button" />
+            <Button
+                android:id="@+id/btnYTe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Y tế"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:backgroundTint="#417FAE" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bo_text"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/btnCHTG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="Thích ứng nhưng cảnh giác, kiểm soát tốt dịch bệnh"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/txtthuong" />
+
+            <ImageButton
+                android:id="@+id/imvMove5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bo_text"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/btnQuyTrinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="9 lợi ích của nước ép khoai tây giúp bạn ngạc nhiên"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/txtthuong" />
+
+            <ImageButton
+                android:id="@+id/imvMove6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bo_text"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/btnShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="Ngườ Việt lan tỏa tinh thần 'Tương thân tương ái' lối sống đẹp trong đại dịch"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/txtthuong" />
+
+            <ImageButton
+                android:id="@+id/imvMove7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bo_text"
+            android:gravity="left">
+
+            <Button
+                android:id="@+id/btnHotline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:text="Phải làm gì khi trở thành F1 có nguy cơ nhiễm Covid19"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/txtthuong" />
+
+            <ImageButton
+                android:id="@+id/imvMove8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00000000"
+                android:src="@drawable/arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/trangchu"
+                android:id="@+id/imbTrangChu"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="#FFFFFF"
+                />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lich"
+                android:id="@+id/imbLich"
+                app:layout_constraintLeft_toRightOf="@id/imbTrangChu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imbHoSo"
+                android:background="#FFFFFF"
+                />
+
+            <ImageButton
+                android:id="@+id/imbHoSo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/lichkham"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="#FFFFFF"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/thongbao"
+                android:id="@+id/imbThongBao"
+                app:layout_constraintRight_toLeftOf="@id/imbCaNhan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/imbHoSo"
+                android:background="#FFFFFF"
+                />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/canhan"
+                android:id="@+id/imbCaNhan"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="#FFFFFF"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</LinearLayout>
