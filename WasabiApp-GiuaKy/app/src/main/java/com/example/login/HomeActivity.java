@@ -10,6 +10,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.ListView;
 
 import com.example.login.adapter.BannerAdapter;
 import com.example.login.adapter.ViewTinTucAdapter;
@@ -17,6 +22,7 @@ import com.example.login.model.Banner;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class HomeActivity extends AppCompatActivity {
     private TabLayout tabLayout;
@@ -26,6 +32,11 @@ public class HomeActivity extends AppCompatActivity {
     BannerAdapter adapter;
     ImageButton imbLichKham, imbHoSoCaNhan, imbCaNhan, imbThongBao;
 
+    String[] items;
+    ArrayList<String> listItems;
+    ArrayAdapter<String> adapterSearch;
+    ListView lvSearch;
+    EditText edtSearch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +50,40 @@ public class HomeActivity extends AppCompatActivity {
         viewPager.setAdapter(viewTinTucAdapter);
         tabLayout.setupWithViewPager(viewPager);
         addEvents();
+
+        lvSearch = findViewById(R.id.lvSearch);
+        //lvSearch.setVisibility(View.INVISIBLE);
+
+        edtSearch = findViewById(R.id.edtSearch);
+        initList();
+
+        edtSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                HomeActivity.this.adapterSearch.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
+    }
+    public void initList() {
+        items = new String[]{
+                "Đặt khám bác sĩ",
+                "Đặt khám chuyên khoa",
+                "Đặt khám bệnh viện",
+                "Đặt khám phòng khám",
+                "Tư vấn y tế online",
+                "Diễn đàn y tế"
+        };
+        listItems = new ArrayList<>(Arrays.asList(items));
+        adapterSearch = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listItems);
+        lvSearch.setAdapter(adapterSearch);
     }
 
     private void linkViews() {
