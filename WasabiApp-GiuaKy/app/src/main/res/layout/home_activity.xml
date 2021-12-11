@@ -20,35 +20,27 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:background="@drawable/bo_text"
-                android:layout_marginBottom="5dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp">
-
-                <ImageView
-                    android:id="@+id/imvSearch"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/ic_baseline_search_24" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".MainActivity">
 
                 <EditText
                     android:id="@+id/edtSearch"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:hint="Tìm kiếm ở đây" />
+                    android:drawableLeft="@drawable/ic_search"
+                    android:paddingStart="10dp"
+                    android:hint="Search"
+                    android:background="@drawable/botron_text"
+                    android:inputType="text" />
 
-                <ImageButton
-                    android:id="@+id/imvAddress"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/ic_baseline_location_on_24"
-                    android:background="@drawable/botronicon"
-                    />
+                <ListView
+                    android:id="@+id/lvSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </ListView>
+
             </LinearLayout>
-
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rcvBanner"
                 android:layout_width="match_parent"
