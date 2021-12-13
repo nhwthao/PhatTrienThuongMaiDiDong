@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.FragmentDatKhamBS2.Thongtin_BS2_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bác sĩ Chuyên khoa 2 Nguyễn Đức Tuấn tốt nghiệp Bác sĩ đa khoa năm 1998 và về công tác tại Bệnh viện Nhi đồng 1 cho đến nay.
+
+Bác sĩ đã có nhiều năm trực tiếp khám Tổng Quát và Chuyên sâu các bệnh lý Chuyên Khoa Nhi tại BV Nhi Đồng 1 (hơn 20 năm) và tại phòng khám nhi (hơn 14 năm ).
+
+Bằng cấp chuyên môn:
+
+1992 - 1998: Học Y khoa tại ĐH Y Dược TP.HCM, tốt nghiệp loại Giỏi.
+1999 – 2003: Học Chuyên khoa 1, hệ nội trú bệnh viện tại ĐH Y Dược TP.HCM, đồng thời thực hành xuyên suốt 04 năm tại BV Nhi Đồng 1, TP.HCM, tốt nghiệp loại Giỏi.
+2003 – 2008: Làm việc tại BV Nhi Đồng 1, TP. Hồ Chí Minh.
+2008 – 2010: Học cao học tại ĐH Y Dược TP.HCM và tốt nghiệp với bằng Thạc sỹ Y khoa. Thời gian này thực hành tại BV Nhi Đồng 1, Tp. Hồ Chí Minh.
+2015 – 2017: Học chuyên khoa cấp 2 tại Đại học Y Dược TP.HCM và tốt nghiệp loại Giỏi.
+Quá trình công tác:
+
+2005: Tu nghiệp tại Đài Loan về chuyên khoa Tim mạch.
+2006 – 2008: Tu nghiệp tại Viện Tim TP. Hồ Chí Minh
+Tu nghiệp ngắn hạn tại Singapore (2009, 2012, 2013), Nhật Bản (2012), Hàn Quốc (2008), Ấn Độ (2015).
+Chức vụ hiện tại:
+
+Trưởng Đơn vị phẫu thuật Tim mạch Bệnh viện Nhi Đồng 1, TP.HCM
+Trưởng khoa Phỏng – Tạo hình (thẩm mỹ) Bệnh viện Nhi Đồng 1, TP.HCM"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

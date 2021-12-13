@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.FragmentPK2.Thongtin_PK2_Fragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nằm trong top 6 phòng khám đạt chuẩn chất lượng trong đợt kiểm tra năm 2019 của Sở Y Tế TP.HCM, Phòng khám ĐK Thủ Dầu Một với 10 năm kinh nghiệm trong việc chăm sóc, thăm khám sức khỏe và chữa bệnh đã tạo được uy tín, sự tin tưởng đến khách hàng cá nhân, các doanh nghiệp lớn trong và ngoài nước.
+
+Sứ mệnh của phòng khám ĐK Thủ Dầu Một là đặt trọng tâm vào việc thăm khám và chẩn đoán chính xác nhằm tìm ra nguy cơ, dấu hiệu bệnh để điều trị kịp thời, hiệu quả.
+
+Để thực hiện được mục tiêu đó, đội ngũ Vigor Health luôn nỗ lực hết mình, đồng thời thường xuyên lắng nghe ý kiến góp ý của bệnh nhân để cải tiến quy trình khám chữa bệnh và kết hợp nâng cấp, đầu tư thêm máy móc, thiết bị y khoa nhằm mang đến trải nghiệm thăm khám sức khỏe tốt nhất dành cho các khách hàng."
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/drawable-v24/botron.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/drawable-v24/botronimage.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/drawable-v24/botronimage2.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/drawable/botron.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/drawable/botronmessage.xml" value="0.25833333333333336" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_bs2.xml" value="0.2" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_bs3.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_bv2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_bv3.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_cg2.xml" value="0.264" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_cg3.xml" value="0.264" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_pk2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_dat_kham_pk3.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/activity_main.xml" value="0.1160081053698075" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_chat_.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_chat_bs2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_chat_bv2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_chat_pk2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_danhgia_.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_danhgia_bs2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_danhgia_bv2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_danhgia_pk2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_thongtin_.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_thongtin_BS2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_thongtin__bs2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_thongtin_bv2.xml" value="0.2421875" />
+        <entry key="..\:/Users/Administrator/Videos/DOANMOBILE/FINAL/app/src/main/res/layout/fragment_thongtin_pk2.xml" value="0.2421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
