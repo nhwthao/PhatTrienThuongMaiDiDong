@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TinCuaBanFragment"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn cảm thấy thế nào?"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã đăng bài."
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Có mười người đã thích ảnh bạn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Có hai người đã bình luận ảnh bạn."
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hãy cập nhật thông tin cá nhân"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn có một lịch khám"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã đăng bài viết thành công"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/botrontintuc"
+        android:textSize="18sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

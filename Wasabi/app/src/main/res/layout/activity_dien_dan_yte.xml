@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DienDanYTe"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:background="@drawable/botron"
+                android:gravity="center"
+                android:paddingTop="7dp">
+
+                <ImageView
+                    android:id="@+id/imvSearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Tìm kiếm ở đây" />
+
+                <ImageButton
+                    android:id="@+id/imvAddress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron"
+                    android:src="@drawable/ic_baseline_location_on_24_red" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:backgroundTint="#E2F2FA"
+                android:src="@drawable/iconreturn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:text="Diễn đàn y tế Online"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/lvDienDan"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:paddingBottom="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <ImageView
+            android:id="@+id/imvHinhAnh"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconhinhanh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/imvCamxuc"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="#ffffff"/>
+        <ImageView
+            android:id="@+id/imvCamxuc"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconcamxuc"
+            android:background="#ffffff"
+            app:layout_constraintLeft_toRightOf="@id/imvHinhAnh"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Nhập câu hỏi của bạn"
+            android:background="#ffffff"
+            app:layout_constraintLeft_toRightOf="@id/imvCamxuc"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageButton
+            android:id="@+id/imvSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconsend"
+            android:background="#ffffff"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
