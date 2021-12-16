@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietLichKham"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHI TIẾT LỊCH KHÁM"
+        android:textSize="35sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_edittext"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star_outline"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:backgroundTint="@color/pink"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã số: 7777"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên: Nguyễn Văn A"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SĐT: 098206110"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giới tính: Nam"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ: Đường Kha Vạn Cân, Trường Thọ, Thử Đức"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_edittext"
+            android:backgroundTint="@color/pink"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bác sĩ:"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BS.CK2: Lê Đình Thông"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SĐT: 1900 2805"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chuyên ngành: Hô hấp"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thời gian:"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:00 - 9:00 Thứ 2, ngày 27/10/2021"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Địa điểm:"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bệnh viên Phạm Ngọc Thạch"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26 Phan Văn Hới, P.Tân Thới Nhất, Q12, TP.HCM"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOKChiTietLK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OK"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/blue"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#FFFFFF">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/trangchu"
+                android:id="@+id/imbTrangChu"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="#FFFFFF"
+                />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/lich"
+                android:id="@+id/imbLich"
+                app:layout_constraintLeft_toRightOf="@id/imbTrangChu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/imbHoSo"
+                android:background="#FFFFFF"
+                />
+
+            <ImageButton
+                android:id="@+id/imbHoSo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/lichkham"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:background="#FFFFFF"/>
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/thongbao"
+                android:id="@+id/imbThongBao"
+                app:layout_constraintRight_toLeftOf="@id/imbCaNhan"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/imbHoSo"
+                android:background="#FFFFFF"
+                />
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/canhan"
+                android:id="@+id/imbCaNhan"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:background="#FFFFFF"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".DatKhamChuyenKhoa2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botron_text"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <ImageView
+                    android:id="@+id/imvSearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Tìm kiếm ở đây" />
+
+                <ImageButton
+                    android:id="@+id/imvAddress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/botron_imv"
+                    android:src="@drawable/ic_baseline_location_on_24_red" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingLeft="15dp">
+
+                <ImageButton
+                    android:id="@+id/imvBack"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+                    android:layout_gravity="center_vertical"
+                    android:backgroundTint="@color/back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tất cả Bác sĩ:"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:paddingStart="15dp"/>
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:id="@+id/lvDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/divider"
+                android:padding="20dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageButton
+            android:id="@+id/imbTrangChu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/trangchu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imbLich"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/lich"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imbTrangChu"
+            app:layout_constraintRight_toLeftOf="@id/imbLichKham" />
+
+        <ImageButton
+            android:id="@+id/imbLichKham"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foregroundGravity="center"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/lichkham"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imbThongBao"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/thongbao"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imbLichKham"
+            app:layout_constraintRight_toLeftOf="@id/imbCaNhan" />
+
+        <ImageButton
+            android:id="@+id/imbCaNhan"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/canhan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

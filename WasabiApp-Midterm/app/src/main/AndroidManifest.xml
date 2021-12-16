@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.login">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Login">
+
+        <activity
+            android:name=".ActivityTaiKhoanCaNhan"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityLogout"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityThongBaoLichKham"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityYTe"
+            android:exported="true" />
+        <activity
+            android:name=".ChinhSuaHSCN"
+            android:exported="true" />
+        <activity
+            android:name=".ChiTietHoSoCaNhan"
+            android:exported="true" />
+        <activity
+            android:name=".ChiTietLichKham"
+            android:exported="true" />
+        <activity
+            android:name=".ChiTietTheoDoiSucKhoe"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityThongBao"
+            android:exported="true" />
+        <activity
+            android:name=".HoSoCaNhan"
+            android:exported="true" />
+        <activity
+            android:name=".InsertOTPLogin"
+            android:exported="true" />
+        <activity
+            android:name=".InsertOTPRegister"
+            android:exported="true" />
+        <activity
+            android:name=".InsertPhoneNumber"
+            android:exported="true" />
+        <activity
+            android:name=".LichKham"
+            android:exported="true" />
+        <activity
+            android:name=".NewPassword"
+            android:exported="true" />
+        <activity
+            android:name=".Register"
+            android:exported="true" />
+        <activity
+            android:name=".WelcomeToWasabi"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DatKhamChuyenKhoa1"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".DatKhamBacSi"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".DatKhamPhongKham"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DatKhamBenhVien"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DatKhamChuyenKhoa2"
+            android:exported="true" >
+
+
+        </activity>
+
+    </application>
+</manifest>
