@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityInsertOTPRegister"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/background"
+    android:gravity="center_vertical">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nhập mã OTP:"
+    android:textSize="24sp"
+    android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/edtNhapOTPDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nhập mã OTP"
+        android:textSize="24sp"
+        android:background="@drawable/shape_edittext"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutGuilaima">
+        <TextView
+            android:id="@+id/btnGuiLaiMaOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gửi lại mã"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/purple_700" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:backgroundTint="@color/purple_700"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnXacNhanDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Xác nhận"
+        android:backgroundTint="@color/blue"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
