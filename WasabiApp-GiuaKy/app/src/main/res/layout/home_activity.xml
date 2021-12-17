@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/background">
+    android:background="#E4F2FF">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                     android:id="@+id/edtSearch"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_search"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
                     android:paddingStart="10dp"
                     android:hint="Search"
                     android:background="@drawable/botron_text"
@@ -58,6 +58,7 @@
                     android:layout_marginLeft="5dp"
                     android:foregroundGravity="center_horizontal"
                     android:src="@drawable/bacsi"
+                    android:background="@drawable/bo_chuc_nang1"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,6 +68,7 @@
                     android:layout_height="80dp"
                     android:foregroundGravity="center_horizontal"
                     android:src="@drawable/chuyengia"
+                    android:background="@drawable/bo_chuc_nang2"
                     app:layout_constraintLeft_toRightOf="@id/imvBacSi"
                     app:layout_constraintRight_toLeftOf="@id/imvBenhVien"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -78,6 +80,7 @@
                     android:layout_marginRight="5dp"
                     android:foregroundGravity="center_horizontal"
                     android:src="@drawable/benhvien"
+                    android:background="@drawable/bo_chuc_nang3"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -94,6 +97,7 @@
                         android:layout_marginLeft="5dp"
                         android:foregroundGravity="center_horizontal"
                         android:src="@drawable/datkham"
+                        android:background="@drawable/bo_chuc_nang4"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent" />
 
@@ -103,6 +107,7 @@
                         android:layout_height="80dp"
                         android:foregroundGravity="center_horizontal"
                         android:src="@drawable/tuvan"
+                        android:background="@drawable/bo_chuc_nang5"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toRightOf="@id/imvDatKham"
                         app:layout_constraintRight_toLeftOf="@id/imvDienDan" />
@@ -114,6 +119,7 @@
                         android:layout_marginRight="5dp"
                         android:foregroundGravity="center_horizontal"
                         android:src="@drawable/diendan"
+                        android:background="@drawable/bo_chuc_nang6"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintRight_toRightOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -121,12 +127,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
                 <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/tab_layout"
-                    />
+                    android:background="@drawable/botron_bang_tin" />
+
                 <androidx.viewpager.widget.ViewPager
                     android:id="@+id/view_paper"
                     android:layout_width="match_parent"
@@ -138,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="#FFFFFF">
+        android:background="#1F6DB6">
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"

@@ -3,6 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_btn-so1.xml" value="0.18611111111111112" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_chuc_nang.xml" value="0.1" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_chuc_nang2.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_chuc_nang3.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_chuc_nang4.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_chuc_nang5.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/bo_chuc_nang6.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/botron.xml" value="0.18611111111111112" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/botron_bang_tin.xml" value="0.20052083333333334" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/botron_imv.xml" value="0.18611111111111112" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/botron_text.xml" value="0.1" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/change_circle.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/drawable/divider.xml" value="0.17314814814814813" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/layout/activity_chi_tiet_ho_so_ca_nhan.xml" value="0.184375" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/layout/fragment_tin_cua_ban.xml" value="0.184375" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/layout/fragment_tin_tuc.xml" value="0.184375" />
+        <entry key="..\:/Nhwthao/HK 5/1-MOBILE/GITHUB/PhatTrienThuongMaiDiDong/WasabiApp-GiuaKy/app/src/main/res/layout/home_activity.xml" value="0.22" />
         <entry key="..\:/Nhwthao/HK 5/MobileApp/12h04/app/src/main/res/layout/activity_chi_tiet_ho_so_ca_nhan.xml" value="0.184375" />
         <entry key="..\:/Nhwthao/HK 5/MobileApp/12h04/app/src/main/res/layout/activity_chi_tiet_lich_kham.xml" value="0.184375" />
         <entry key="..\:/Nhwthao/HK 5/MobileApp/DOAN/Login/app/src/main/res/layout/activity_insert_otp.xml" value="0.1796875" />

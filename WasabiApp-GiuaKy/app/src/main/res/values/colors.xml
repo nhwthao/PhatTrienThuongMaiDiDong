@@ -15,4 +15,12 @@
     <color name="txtlienket">#FF3700B3</color>
     <color name="pink">#F1A7A7</color>
     <color name="back">#def4ff</color>
+    <color name="chuc_nang_1">#00B2CA</color>
+    <color name="chuc_nang_2">#FE6148</color>
+    <color name="chuc_nang_3">#35B839</color>
+    <color name="chuc_nang_4">#FFB02D</color>
+    <color name="chuc_nang_5">#4636FF</color>
+    <color name="chuc_nang_6">#ECDA3B</color>
+    <color name="thanh_bang_tin">#165794</color>
+
 </resources>
