@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragment.FragmentTinCuaBan"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn cảm thấy thế nào?"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã đăng bài."
+        android:layout_marginTop="10dp"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Có mười người đã thích ảnh bạn"
+        android:layout_marginTop="10dp"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Có hai người đã bình luận ảnh bạn."
+        android:layout_marginTop="10dp"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hãy cập nhật thông tin cá nhân"
+        android:layout_marginTop="10dp"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có một lịch khám"
+        android:layout_marginTop="10dp"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã đăng bài viết thành công"
+        android:layout_marginTop="10dp"
+        android:background="#E4F2FF"
+        android:textSize="18sp"/>
+
+</LinearLayout>

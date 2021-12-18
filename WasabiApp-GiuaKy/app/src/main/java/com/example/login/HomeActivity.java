@@ -56,7 +56,6 @@ public class HomeActivity extends AppCompatActivity {
 
         edtSearch = findViewById(R.id.edtSearch);
         initList();
-
         edtSearch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

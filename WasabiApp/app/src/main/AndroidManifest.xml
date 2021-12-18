@@ -13,6 +13,9 @@
             android:name=".ActivityLoginAndRegister"
             android:exported="true" />
         <activity
+            android:name=".Navigation"
+            android:exported="true" />
+        <activity
             android:name=".ActivityInsertOTPRegister"
             android:exported="true" />
         <activity
@@ -31,7 +34,7 @@
             android:name=".ActivityInsertPhoneNumber"
             android:exported="true" />
         <activity
-            android:name=".Navigation"
+            android:name=".ActivityHome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

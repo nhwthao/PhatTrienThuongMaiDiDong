@@ -12,4 +12,13 @@
     <color name="back">#def4ff</color>
     <color name="blue">#2196F3</color>
     <color name="blueNavigation">#1F6DB6</color>
+    <color name="chuc_nang_1">#00B2CA</color>
+    <color name="chuc_nang_2">#FE6148</color>
+    <color name="chuc_nang_3">#35B839</color>
+    <color name="chuc_nang_4">#FFB02D</color>
+    <color name="chuc_nang_5">#4636FF</color>
+    <color name="chuc_nang_6">#ECDA3B</color>
+    <color name="background">#DBEEFF</color>
+    <color name="fragment">#165794</color>
+
 </resources>
