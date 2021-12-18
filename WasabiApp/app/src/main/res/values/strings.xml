@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">WasabiApp</string>
+    <string name="search">Tìm kiếm ở đây</string>
+    <string name="allspecialist">Tất cả Chuyên Khoa:</string>
+    <string name="all_specialist_doctor">Tất cả bác sĩ chuyên khoa:</string>
 </resources>

@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
         <activity
+            android:name=".BookingSpecialist2"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BookingSpecialist1"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".ActivityLoginAndRegister"
             android:exported="true" />
         <activity
