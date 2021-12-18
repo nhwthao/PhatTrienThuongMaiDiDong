@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ECFE8"
+    android:orientation="vertical"
+    tools:context=".BookingSpecialist1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/layoutSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/botron_text"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imvSearch"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.25"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:hint="@string/search" />
+
+            <ImageButton
+                android:id="@+id/imvAddress"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/botron_imv"
+                android:src="@drawable/ic_baseline_location_on_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="15dp">
+
+            <ImageButton
+                android:id="@+id/imvBack"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="@color/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/allspecialist"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingStart="15dp"/>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gvChuyenKhoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:gravity="center_vertical"
+            android:numColumns="3"
+            android:scrollbars="none" />
+    </LinearLayout>
+</RelativeLayout>

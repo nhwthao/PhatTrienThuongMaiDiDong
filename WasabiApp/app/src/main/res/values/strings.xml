@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">WasabiApp</string>
+<<<<<<< HEAD
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+=======
+    <string name="search">Tìm kiếm ở đây</string>
+    <string name="allspecialist">Tất cả Chuyên Khoa:</string>
+    <string name="all_specialist_doctor">Tất cả bác sĩ chuyên khoa:</string>
+>>>>>>> bfefefae15711d0ce4f18116ca38a859ea1e1ecf
 </resources>
