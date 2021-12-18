@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8ECFE8"
+    android:background="@color/background"
     android:orientation="vertical"
     tools:context=".BookingSpecialist1">
 
@@ -60,7 +60,7 @@
                 android:layout_height="20dp"
                 android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
                 android:layout_gravity="center_vertical"
-                android:backgroundTint="@color/back"/>
+                android:backgroundTint="@color/background"/>
 
             <TextView
                 android:layout_width="wrap_content"

@@ -26,7 +26,6 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             app:cardCornerRadius="50dp"
-            android:backgroundTint="@color/nen_avt"
             android:layout_margin="10dp">
             <ImageView
                 android:id="@+id/imvHinh"
