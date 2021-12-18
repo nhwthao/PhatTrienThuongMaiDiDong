@@ -20,5 +20,6 @@
     <color name="chuc_nang_6">#ECDA3B</color>
     <color name="background">#DBEEFF</color>
     <color name="fragment">#165794</color>
-
+    <color name="ButtonColor">#119DDC</color>
+    <color name="MessageColor">#1BFF07</color>
 </resources>

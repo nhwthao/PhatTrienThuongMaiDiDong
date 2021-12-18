@@ -10,9 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
         <activity
-            android:name=".BookingHospital"
-            android:exported="true"
-            android:screenOrientation="portrait">
+            android:name=".BookingClinic3"
+            android:exported="true" />
+        <activity
+            android:name=".BookingClinic2"
+            android:exported="true" />
+        <activity
+            android:name=".BookingHospital3"
+            android:exported="true" />
+        <activity
+            android:name=".BookingHospital2"
+            android:exported="true" />
+        <activity
+            android:name=".BookingDoctor3"
+            android:exported="true" />
+        <activity
+            android:name=".BookingDoctor2"
+            android:exported="true" />
+        <activity
+            android:name=".BookingSpecialist4"
+            android:exported="true" />
+        <activity
+            android:name=".BookingSpecialist3"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,15 +40,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".BookingHospital"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".BookingClinic"
             android:exported="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingDoctor"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingSpecialist2"
             android:exported="true"

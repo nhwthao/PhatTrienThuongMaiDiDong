@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragment.FragmentHospitalInfor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bệnh viện Răng Hàm Mặt Thành phố Hồ Chí Minh là bệnh viện chuyên khoa đầu ngành về răng hàm mặt của TP.HCM, Bệnh viện răng hàm mặt TP.HCM đã khẳng định được vị thế của mình, sánh ngang tầm với các nước trong khu vực.
+
+''Không ngừng nâng cao chất lượng dịch vụ''
+
+Đổi mới và nâng cao các dịch vụ là một trong những ưu tiên hàng đầu trong định hướng phát triển của Bệnh viện răng hàm mặt TP.HCM trong thời gian qua. Chính vì vậy, hiện nay chất lượng dịch vụ của bệnh viện đã ngang tầm với các nước trong khu vực, có uy tín trên trường quốc tế, thu hút được nhiều bệnh nhân trong và ngoài nước đến bệnh viện điều trị.
+
+Bằng việc áp dụng hàng loạt kỹ thuật mới và triển khai các chương trình nha khoa phòng ngừa, điều trị các bệnh răng miệng, Bệnh viện Răng Hàm Mặt TP.HCM đã làm tốt nhiệm vụ phục vụ cho công tác chăm sóc sức khỏe nhân dân.
+
+Hiện bệnh viện đã và đang triển khai các dịch vụ kỹ thuật cao như: điều trị nha khoa dưới gây mê thích ứng cho bệnh nhân trẻ em và người lớn nhạy cảm, sợ sệt, mắc các bệnh nội khoa (Tiểu đường, tim mạch, huyết áp, tai biến mạch máu não. Cấy Ghép Implant với máy Cone Beam CT Scan giúp khám, lập kế hoạch điều trị chính xác, Bệnh viện thực hiện đầy đủ các trường hợp cấy ghép Implant từ dễ đến phức tạp dưới gây tê hoặc gây mê. Tạo hình thẩm mỹ với những kỹ thuật tạo hình như tạo hình khuôn mặt trái xoan, hạ thấp gò má cao, tạo hình cằm chẻ, môi chẻ, căng da mặt, tạo má lúm đồng tiền, xóa tàn nhang, nốt ruồi, cắt mí mắt, nâng mũi... cắt xương hàm trên, xương hàm dưới điều trị những trường hợp hô - móm trầm trọng mà chỉnh nha bằng mắc cài không đem lại kết quả."
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
