@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
         <activity
+            android:name=".ActivityLoginAndRegister"
+            android:exported="true" />
+        <activity
             android:name=".ActivityInsertOTPRegister"
             android:exported="true" />
         <activity
@@ -28,7 +31,7 @@
             android:name=".ActivityInsertPhoneNumber"
             android:exported="true" />
         <activity
-            android:name=".ActivityLoginAndRegister"
+            android:name=".Navigation"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
