@@ -20,7 +20,6 @@
         </activity>
         <activity
             android:name=".BookingClinic3"
-<<<<<<< HEAD
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,66 +31,25 @@
             android:name=".BookingClinic2"
             android:exported="true">
 
-=======
-            android:exported="true" >
-<<<<<<< HEAD
-=======
-
->>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
-        </activity>
-        <activity
-            android:name=".BookingClinic2"
-            android:exported="true" >
-<<<<<<< HEAD
-
-=======
->>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
->>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
         </activity>
         <activity
             android:name=".BookingHospital3"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BookingHospital2"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BookingDoctor3"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BookingDoctor2"
-            android:exported="true" >
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BookingSpecialist4"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BookingSpecialist3"
-<<<<<<< HEAD
             android:exported="true" />
-=======
-            android:exported="true">
-<<<<<<< HEAD
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-=======
->>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
-        </activity>
->>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
         <activity
             android:name=".BookingHospital"
             android:exported="true"
@@ -103,20 +61,11 @@
         <activity
             android:name=".BookingDoctor"
             android:exported="true"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingSpecialist2"
             android:exported="true"
-            android:screenOrientation="portrait"
-            >
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingSpecialist1"
             android:exported="true"

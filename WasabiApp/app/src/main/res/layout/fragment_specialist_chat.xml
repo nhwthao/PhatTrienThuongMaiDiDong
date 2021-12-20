@@ -1,71 +1,79 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.example.fragment.FragmentClinicChat"
-    android:padding="10dp"
-    android:orientation="vertical"
-    android:gravity="bottom">
-
+    tools:context="com.example.fragment.FragmentSpecialistChat"
+    android:padding="10dp">
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
         android:orientation="horizontal"
-        android:layout_marginBottom="10dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212">
 
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="20dp"
             android:background="@drawable/botronmessage"
             android:gravity="center"
             android:text="Xin chào! Bạn cần giúp đỡ gì?"
-            android:textSize="13sp"
-            android:padding="8dp"
+            android:textSize="15sp"
+
             />
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/pk_thudau1" />
+            android:src="@drawable/bs_nam" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="400dp"
+        android:layout_height="54dp"
         android:background="#FBB3EC"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="10dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485">
 
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:backgroundTint="#FBB3EC"
-            android:src="@drawable/ic_baseline_add_photo_alternate_24" />
+            android:src="@drawable/ic_add_photo" />
 
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginRight="5dp"
             android:backgroundTint="#FBB3EC"
-            android:src="@drawable/ic_baseline_add_reaction_24" />
+            android:src="@drawable/ic_add_reaction" />
 
         <EditText
             android:layout_width="220dp"
             android:layout_height="40dp"
             android:background="@color/white"
             android:hint="Nhập câu hỏi của bạn "
-            android:textSize="13sp" />
+            android:textSize="12dp" />
 
         <ImageButton
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:backgroundTint="#FBB3EC"
-            android:src="@drawable/ic_baseline_send_24" />
+            android:src="@drawable/ic_send" />
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

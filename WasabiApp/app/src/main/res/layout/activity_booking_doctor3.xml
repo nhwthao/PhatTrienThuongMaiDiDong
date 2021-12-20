@@ -1,164 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookingDoctor3"
-    android:padding="15dp"
-    android:background="@color/background"
-    android:orientation="vertical"
-    android:weightSum="4">
+    android:background="@color/background">
     <ImageButton
-        android:id="@+id/imvBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/back"
-        android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
+        android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
-        android:id="@id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_width="390dp"
+        android:layout_height="221dp"
         android:background="@drawable/botron"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="10dp"
-                android:backgroundTint="@color/nen_avt"
-                app:cardCornerRadius="50dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086">
 
-                <ImageView
-                    android:id="@+id/imvHinh"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/bs_nam" />
-            </androidx.cardview.widget.CardView>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_baseline_favorite_24" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="5dp"
-                    android:text="10"
-                    android:textColor="#4CAF50" />
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/txtChucVu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BS-CK2"
-                android:textStyle="bold"
-                android:textSize="12sp"/>
-
-            <TextView
-                android:id="@+id/txtTen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lê Đình Thông"
-                android:textStyle="bold"
-                android:textSize="12sp"/>
+            android:background="#E8B8B8"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_baseline_call_24"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:id="@+id/txtPhone"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0945179194"
-                    android:textSize="12sp"/>
-            </LinearLayout>
+                    android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        android:backgroundTint="#EDBFBF"
+                        app:cardCornerRadius="50dp">
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_baseline_work_outline_24"
-                    android:layout_gravity="center"/>
+                        <ImageView
+                            android:id="@+id/imvHinh"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bs_nam" />
+                    </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/txtKhoa"
-                    android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_favorite_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:text="10"
+                            android:textColor="#4CAF50" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hô hấp"
-                    android:textSize="12sp"/>
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtChucVu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BS-CK2"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lê Đình Thông"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_baseline_call_24"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0945179194" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_baseline_work_outline_24"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtKhoa"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hô hấp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_baseline_business_center_24"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtCoQuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bệnh viện Phạm Ngọc Thạch" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/ic_baseline_location_on_24"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/txtDiaChi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26 Phan Văn Hớn, P.Tân Thới Nhất, Q.12, TP.HCM" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_baseline_business_center_24"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:id="@+id/txtCoQuan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bệnh viện Phạm Ngọc Thạch"
-                    android:textSize="12sp"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_baseline_location_on_24"
-                    android:layout_gravity="center"/>
-
-                <TextView
-                    android:id="@+id/txtDiaChi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="26 Phan Văn Hớn, P.Tân Thới Nhất, Q.12, TP.HCM"
-                    android:textSize="12sp"/>
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
-    <ScrollView
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:backgroundTint="@color/ButtonColor"
+        android:text="Đặt lịch"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="363dp"
+        android:layout_height="438dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -177,8 +213,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_date" />
@@ -201,8 +237,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_time" />
@@ -225,8 +261,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_hoso" />
@@ -250,8 +286,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_note" />
@@ -307,16 +343,5 @@
 
         </LinearLayout>
     </ScrollView>
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/ButtonColor"
-        android:text="Đặt lịch"
-        android:layout_gravity="center"
-        android:textAllCaps="false"
-        android:textColor="@color/black" />
 
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

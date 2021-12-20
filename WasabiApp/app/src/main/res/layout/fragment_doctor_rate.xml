@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.fragment.FragmentDoctorRate">
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -13,169 +12,161 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp">
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person1" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Bác sĩ rất chuyên nghiệp"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person2" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Thuốc bác sĩ kê rất hiệu quả"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person3" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Bác sĩ nhiệt tình"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person4" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Rất hài lòng"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person3" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Sẽ đến tiếp nếu lần sau bị bệnh"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person2" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Chất lượng tuyệt vời"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="15dp">
-
+                android:paddingBottom="20dp">
                 <ImageView
                     android:layout_width="49dp"
                     android:layout_height="50dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="30dp"
                     android:background="@color/white"
                     android:src="@drawable/person1" />
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/botronmessage"
-                    android:gravity="center"
-                    android:padding="8dp"
+                    android:padding="10dp"
                     android:text="Bác sĩ đẹp trai, 10 điểm"
-                    android:textSize="13sp" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+
+
+
         </LinearLayout>
+
 
     </ScrollView>
 
