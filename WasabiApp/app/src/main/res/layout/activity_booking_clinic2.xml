@@ -6,15 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".BookingClinic2"
     android:background="@color/background"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:weightSum="4"
     android:padding="15dp">
+=======
+    android:orientation="vertical">
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/back"
         android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"/>
+<<<<<<< HEAD
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,6 +90,42 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+=======
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E8B8B8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="#EDBFBF"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:id="@+id/imvHinh"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pk_thudau1" />
+                </androidx.cardview.widget.CardView>
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -104,16 +145,92 @@
                     android:id="@+id/txtDiaChi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< HEAD
                     android:text="303 Đại lộ Bình Dương, Phú Thọ, Thủ Dầu Một, Bình Dương " />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+=======
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_favorite_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="20"
+                        android:textColor="#4CAF50" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/txtChucVu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phòng khám DK Thủ Dầu Một"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:id="@+id/txtDiaChi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="303 Đại lộ Bình Dương, Phú Thọ, Thủ Dầu Một, Bình Dương " />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:orientation="horizontal"
         android:gravity="center">
+=======
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
 
         <ImageView
             android:layout_width="wrap_content"
@@ -152,6 +269,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="4">
@@ -179,4 +297,40 @@
         android:textAllCaps="false"
         android:textColor="@color/black"
         />
+=======
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_PK2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ClinicPager"
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout">
+
+        </androidx.viewpager.widget.ViewPager>
+
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnDatKham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/ButtonColor"
+            android:text="Đặt khám"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+     />
+
+
+
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
 </LinearLayout>
