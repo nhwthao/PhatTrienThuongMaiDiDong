@@ -23,4 +23,5 @@
     <color name="ButtonColor">#119DDC</color>
     <color name="MessageColor">#1BFF07</color>
     <color name="nen_avt">#ABDAEF</color>
+    <color name="txtthuong">#FF000000</color>
 </resources>
