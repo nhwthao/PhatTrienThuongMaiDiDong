@@ -10,11 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
         <activity
+            android:name=".ActivityBookAppointment"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".BookingClinic3"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".BookingClinic2"
-            android:exported="true" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".BookingHospital3"
             android:exported="true" />
@@ -32,13 +49,7 @@
             android:exported="true" />
         <activity
             android:name=".BookingSpecialist3"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".BookingHospital"
             android:exported="true"

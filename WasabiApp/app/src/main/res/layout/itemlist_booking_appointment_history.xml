@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/botron_detailbookappointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LỊCH KHÁM MÃ"
+            android:textSize="24sp"
+            android:textColor="@color/blueNavigation"/>
+        <TextView
+            android:id="@+id/txtBAId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0001"
+            android:textSize="24sp"
+            android:textColor="@color/blueNavigation"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtBATime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9h Thứ Hai, ngày 10/1/2022"
+            android:textSize="20sp"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bác sĩ:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtBADoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lê Đình B"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa điểm:"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtBAAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bệnh viện Đa khoa tỉnh"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
