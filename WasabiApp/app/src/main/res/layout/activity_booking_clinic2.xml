@@ -1,144 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookingClinic2"
-    android:background="@color/background">
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:padding="15dp">
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/back"
-        android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"/>
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="390dp"
-        android:layout_height="221dp"
-        android:background="@drawable/botron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078">
+        android:gravity="center_vertical"
+        android:background="@drawable/botron">
 
-        <androidx.cardview.widget.CardView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/imvHinh"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/pk_thudau1" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_favorite_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="20"
+                    android:textColor="#4CAF50" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E8B8B8"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp">
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/txtChucVu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phòng khám DK Thủ Dầu Một"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content" />
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_location_on_24" />
+
+                <TextView
+                    android:id="@+id/txtDiaChi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTint="#EDBFBF"
-                        app:cardCornerRadius="50dp">
-
-                        <ImageView
-                            android:id="@+id/imvHinh"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_gravity="center"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/pk_thudau1" />
-                    </androidx.cardview.widget.CardView>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center">
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_baseline_favorite_24" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:text="20"
-                            android:textColor="#4CAF50" />
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
-
-                    <TextView
-                        android:id="@+id/txtChucVu"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Phòng khám DK Thủ Dầu Một"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_baseline_location_on_24"
-                            android:layout_gravity="center"/>
-
-                        <TextView
-                            android:id="@+id/txtDiaChi"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="303 Đại lộ Bình Dương, Phú Thọ, Thủ Dầu Một, Bình Dương " />
-                    </LinearLayout>
-                </LinearLayout>
+                    android:text="303 Đại lộ Bình Dương, Phú Thọ, Thủ Dầu Một, Bình Dương " />
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="357dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         android:gravity="center">
 
         <ImageView
@@ -176,44 +150,33 @@
             android:src="@drawable/ic_baseline_star"
             />
     </LinearLayout>
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout_PK2"
-        android:layout_marginLeft="23dp"
-        android:layout_marginRight="23dp"
-        android:layout_width="390dp"
-        android:layout_height="45dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="4">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_PK2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/ClinicPager"
-        android:layout_width="393dp"
-        android:layout_height="342dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout_PK2"
-        app:layout_constraintVertical_bias="0.0">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ClinicPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
 
-
-    </androidx.viewpager.widget.ViewPager>
-
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
     <Button
         android:id="@+id/btnDatKham"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:backgroundTint="@color/ButtonColor"
         android:text="Đặt khám"
         android:textAllCaps="false"
-
         android:textColor="@color/black"
-
-        app:layout_constraintBottom_toBottomOf="@+id/viewPager_PK2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageButton" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+</LinearLayout>

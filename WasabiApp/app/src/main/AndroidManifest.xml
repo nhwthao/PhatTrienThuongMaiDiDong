@@ -11,25 +11,40 @@
         android:theme="@style/Theme.WasabiApp">
         <activity
             android:name=".BookingClinic3"
-            android:exported="true" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".BookingClinic2"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".BookingHospital3"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".BookingHospital2"
-            android:exported="true" />
+            android:exported="true">
+
+
+        </activity>
         <activity
             android:name=".BookingDoctor3"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".BookingDoctor2"
-            android:exported="true" />
+            android:exported="true" >
+
+
+        </activity>
         <activity
             android:name=".BookingSpecialist4"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".BookingSpecialist3"
             android:exported="true">
@@ -38,6 +53,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".BookingHospital"
