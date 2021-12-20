@@ -4,14 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".BookingClinic3"
+<<<<<<< HEAD
     android:background="@color/background"
     android:orientation="vertical">
 
+=======
+<<<<<<< HEAD
+    android:weightSum="4"
+    android:padding="15dp"
+    android:background="@color/background">
+=======
+    android:background="@color/background"
+    android:orientation="vertical">
+
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
+>>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
     <ImageButton
         android:id="@+id/imvBack"
+        android:layout_weight="0.5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        android:backgroundTint="@color/back"
+        android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/botron">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pk_thudau1"
+                android:scaleType="fitCenter" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_favorite_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="10"
+                    android:textColor="#4CAF50" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+=======
+>>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
         android:backgroundTint="@color/background"
         android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
     />
@@ -24,105 +86,52 @@
             android:layout_margin="10dp"
             >
 
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/txtChucVu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_margin="10dp"
-                        android:backgroundTint="#EDBFBF"
-                        app:cardCornerRadius="50dp">
-
-                        <ImageView
-                            android:id="@+id/imvHinh"
-                            android:layout_width="150dp"
-                            android:layout_height="150dp"
-                            android:layout_gravity="center"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/pk_thudau1" />
-                    </androidx.cardview.widget.CardView>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center">
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/ic_baseline_favorite_24" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:text="10"
-                            android:textColor="#4CAF50" />
-                    </LinearLayout>
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/txtChucVu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Phòng khám ĐK ThủDầu Một"
-                            android:textStyle="bold"
-                            android:layout_gravity="center"
-                            />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        >
-
-                        <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/ic_baseline_location_on_24"
-                            android:layout_gravity="center"/>
-
-                        <TextView
-                            android:id="@+id/txtDiaChi"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="303 Đại lộ Bình Dương, Phú Thọ, Thủ Dầu Một, Bình Dương "
-                            android:layout_gravity="center"/>
-                    </LinearLayout>
-                </LinearLayout>
+                    android:text="Phòng khám ĐK Thủ Dầu Một"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    />
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    android:layout_gravity="center"/>
 
+                <TextView
+                    android:id="@+id/txtDiaChi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="303 Đại lộ Bình Dương, Phú Thọ, Thủ Dầu Một, Bình Dương"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+=======
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
+>>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,8 +149,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_date" />
@@ -164,8 +173,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_time" />
@@ -188,8 +197,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_hoso" />
@@ -213,8 +222,8 @@
                 android:background="@drawable/botron_text">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_note" />
@@ -269,15 +278,34 @@
 
 
         </LinearLayout>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    </ScrollView>
+=======
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
+>>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/ButtonColor"
         android:text="Đặt lịch"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"/>
+=======
+>>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         />
+<<<<<<< HEAD
+=======
+>>>>>>> 36fcacd7931b451ada902216797b71c4b54c3ae3
+>>>>>>> 50ebefb02a0866b56b58488a25c511b52daca2cd
 
 </LinearLayout>

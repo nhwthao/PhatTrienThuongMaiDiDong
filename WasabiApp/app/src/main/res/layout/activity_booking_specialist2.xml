@@ -77,7 +77,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:layout_marginBottom="?attr/actionBarSize"
             android:divider="@drawable/divider"
             android:padding="20dp"
             android:scrollbars="none" />
