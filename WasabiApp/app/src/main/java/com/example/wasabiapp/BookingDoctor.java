@@ -1,12 +1,22 @@
 package com.example.wasabiapp;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.adapter.DoctorAdapter;
+import com.example.interfaces.MyItemClickDoctor;
 import com.example.model.Doctor;
 
 import java.util.ArrayList;
@@ -15,6 +25,7 @@ public class BookingDoctor extends AppCompatActivity {
     ListView lvDoctor2;
     DoctorAdapter doctorAdapter;
     ArrayList<Doctor> doctors;
+    MyItemClickDoctor itemClickDoctor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +34,28 @@ public class BookingDoctor extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
+        addEvent();
     }
 
     private void linkViews() {
         lvDoctor2=findViewById(R.id.lvDoctor2);
+    }
+
+    private void addEvent() {
+        lvDoctor2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT){
+                    itemClickDoctor=(MyItemClickDoctor) getParentActivityIntent();
+                    if(itemClickDoctor!= null){
+                        itemClickDoctor.click(doctors.get(i));
+                    }
+                }else{
+                    Intent intent= new Intent(BookingDoctor.this,BookingDoctor2.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     private void initData() {
@@ -47,4 +76,5 @@ public class BookingDoctor extends AppCompatActivity {
         doctorAdapter=new DoctorAdapter(BookingDoctor.this,R.layout.item_doctor,doctors);
         lvDoctor2.setAdapter(doctorAdapter);
     }
+
 }
