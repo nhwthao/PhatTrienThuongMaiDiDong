@@ -21,6 +21,30 @@
         <activity
             android:name=".BookingClinic2"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".BookingHospital3"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".BookingHospital2"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".BookingDoctor3"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".BookingDoctor2"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".BookingSpecialist4"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,23 +52,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".BookingHospital3"
-            android:exported="true" />
-        <activity
-            android:name=".BookingHospital2"
-            android:exported="true" />
-        <activity
-            android:name=".BookingDoctor3"
-            android:exported="true" />
-        <activity
-            android:name=".BookingDoctor2"
-            android:exported="true" />
-        <activity
-            android:name=".BookingSpecialist4"
-            android:exported="true" />
-        <activity
             android:name=".BookingSpecialist3"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".BookingHospital"
             android:exported="true"
