@@ -3,7 +3,10 @@ package com.example.wasabiapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.adapter.DoctorAdapter;
@@ -27,6 +30,7 @@ public class BookingHospital extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
+        addEvents();
     }
 
     private void linkViews() {
@@ -47,5 +51,18 @@ public class BookingHospital extends AppCompatActivity {
     private void loadData() {
         hospitalAdapter=new HospitalAdapter(BookingHospital.this,R.layout.item_benhvien,hospitals);
         lvBenhVien.setAdapter(hospitalAdapter);
+    }
+
+    private void addEvents() {
+        lvBenhVien.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(BookingHospital.this, BookingHospital2.class);
+                intent.putExtra("Index", i);
+                intent.putParcelableArrayListExtra("Hospital", hospitals);
+
+                startActivity(intent);
+            }
+        });
     }
 }

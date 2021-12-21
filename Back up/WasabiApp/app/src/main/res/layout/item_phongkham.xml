@@ -87,16 +87,6 @@
                     android:text="Thôn Bình An, xã Đlieya, KrongNa, DakLak"
                     />
             </LinearLayout>
-
-            <Button
-                android:id="@+id/btnDatKham"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Đặt khám"
-                android:layout_gravity="end"
-                android:layout_marginEnd="20dp"
-                android:backgroundTint="@color/teal_700"
-                />
         </LinearLayout>
 
 

@@ -3,7 +3,10 @@ package com.example.wasabiapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.adapter.DoctorAdapter;
@@ -23,6 +26,7 @@ public class BookingSpecialist2 extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
+        addEvents();
     }
 
     private void linkViews() {
@@ -42,5 +46,29 @@ public class BookingSpecialist2 extends AppCompatActivity {
     private void loadData() {
         doctorAdapter=new DoctorAdapter(BookingSpecialist2.this,R.layout.item_doctor,doctors);
         lvDoctor.setAdapter(doctorAdapter);
+    }
+
+    private void addEvents() {
+        lvDoctor.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT){
+//                    itemClickDoctor=(MyItemClickDoctor) getIntent();
+//                    if(itemClickDoctor!= null){
+//                        itemClickDoctor.click(doctors.get(i));
+//                    }
+//                }else{
+//                    Intent intent= new Intent(BookingDoctor.this,BookingDoctor2.class);
+//                    startActivity(intent);
+//                }
+
+                Intent intent = new Intent(BookingSpecialist2.this, BookingSpecialist3.class);
+                intent.putExtra("Index",i);
+                intent.putParcelableArrayListExtra("Doctor",doctors);
+
+                startActivity(intent);
+
+            }
+        });
     }
 }
