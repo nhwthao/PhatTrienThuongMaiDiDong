@@ -51,7 +51,7 @@ public class FragmentBookAppointmentNew extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT){
                     itemClick = (MyItemClick) getActivity();
-                    if(itemClick !=null){
+                    if(itemClick != null){
                         itemClick.click(bookAppointments.get(i));
                     }else {
                         txtIdLK.setText(bookAppointments.get(i).getBaId());
