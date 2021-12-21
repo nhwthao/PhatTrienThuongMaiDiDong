@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -8,3 +9,167 @@
 
 
 </LinearLayout>
+=======
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.fragment.FragmentHome"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/layoutSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/botron_text"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imvSearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.5"
+                    android:hint="@string/search" />
+
+                <ImageButton
+                    android:id="@+id/imvAddress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/botron_imv"
+                    android:src="@drawable/ic_baseline_location_on_24" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp">
+
+                <ImageButton
+                    android:id="@+id/imvBacSi"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:foregroundGravity="center_horizontal"
+                    android:src="@drawable/bacsi"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/nutchucnang1"/>
+
+                <ImageButton
+                    android:id="@+id/imvChuyenKhoa"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:foregroundGravity="center_horizontal"
+                    android:src="@drawable/chuyenkhoa"
+                    app:layout_constraintLeft_toRightOf="@id/imvBacSi"
+                    app:layout_constraintRight_toLeftOf="@id/imvBenhVien"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/nutchucnang2"/>
+
+                <ImageButton
+                    android:id="@+id/imvBenhVien"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="5dp"
+                    android:foregroundGravity="center_horizontal"
+                    android:src="@drawable/benhvien"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@drawable/nutchucnang3"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintTop_toBottomOf="@id/imvChuyenKhoa"
+                    >
+                    <ImageButton
+                        android:id="@+id/imvDatKham"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:foregroundGravity="center_horizontal"
+                        android:src="@drawable/phongkham"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:background="@drawable/nutchucnang4"/>
+
+                    <ImageButton
+                        android:id="@+id/imvTuVan"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:foregroundGravity="center_horizontal"
+                        android:src="@drawable/tuvan"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@id/imvDatKham"
+                        app:layout_constraintRight_toLeftOf="@id/imvDienDan"
+                        android:background="@drawable/nutchucnang5"/>
+
+                    <ImageButton
+                        android:id="@+id/imvDienDan"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="5dp"
+                        android:foregroundGravity="center_horizontal"
+                        android:src="@drawable/diendan"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:background="@drawable/nutchucnang6"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <com.google.android.material.tabs.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tab_layout"
+                    android:background="@drawable/bo_tintucfragment"
+                    app:tabTextColor="@color/white"
+                    android:layout_margin="5dp"
+
+                    />
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_paper"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_margin="7dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> 755715c5cf31b1e7f91bde335db60bf88ea2b2f1
