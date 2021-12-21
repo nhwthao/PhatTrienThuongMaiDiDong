@@ -1,7 +1,5 @@
 package com.example.adapter;
 
-import android.content.ComponentCallbacks;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;

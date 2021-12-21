@@ -1,7 +1,6 @@
 package com.example.fragment;
 
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,19 +18,6 @@ import com.example.model.MyItemClick;
 import com.example.utils.Constant;
 import com.example.wasabiapp.R;
 
-public class FragmentHome extends Fragment {
-
-    public FragmentHome(){
-
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home, container, false);
-    }
-}
-=======
 
 import androidx.fragment.app.Fragment;
 
@@ -95,4 +81,3 @@ public class FragmentHome extends Fragment {
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 }
->>>>>>> 755715c5cf31b1e7f91bde335db60bf88ea2b2f1

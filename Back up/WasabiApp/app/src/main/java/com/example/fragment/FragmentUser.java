@@ -1,36 +1,19 @@
 package com.example.fragment;
 
 import android.os.Bundle;
-<<<<<<< HEAD
-=======
 
 import androidx.fragment.app.Fragment;
 
->>>>>>> 755715c5cf31b1e7f91bde335db60bf88ea2b2f1
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.wasabiapp.R;
 
-public class FragmentUser extends Fragment {
-
-    public FragmentUser(){
-
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_user, container, false);
-    }
-}
-=======
 import com.example.wasabiapp.R;
 
 /**
@@ -87,4 +70,3 @@ public class FragmentUser extends Fragment {
         return inflater.inflate(R.layout.fragment_user, container, false);
     }
 }
->>>>>>> 755715c5cf31b1e7f91bde335db60bf88ea2b2f1

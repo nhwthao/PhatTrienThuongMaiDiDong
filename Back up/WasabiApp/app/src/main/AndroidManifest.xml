@@ -10,21 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
         <activity
-<<<<<<< HEAD
-            android:name=".BookingClinic3"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".BookingClinic2"
-            android:exported="true">
-=======
             android:name=".ActivityThongBao"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
->>>>>>> 755715c5cf31b1e7f91bde335db60bf88ea2b2f1
-
         </activity>
         <activity
             android:name=".ActivityLogout"
@@ -33,9 +20,6 @@
             android:name=".ActivityUser"
             android:exported="true">
         </activity>
-        <activity
-            android:name=".ActivityBookAppointment"
-            android:exported="true" />
         <activity
             android:name=".BookingClinic3"
             android:exported="true" />
@@ -113,7 +97,6 @@
         <activity
             android:name=".ActivityHome"
             android:exported="true">
-
         </activity>
     </application>
 
