@@ -1,46 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:background="@color/background">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LỊCH KHÁM"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center"/>
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:padding="10dp">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center">
-        <Button
-            android:id="@+id/btnLKMoiNhat"
-            android:layout_width="170dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:text="THÔNG BÁO"
+            android:textColor="@color/txtthuong"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Mới nhất"
-            android:backgroundTint="@color/blue"
-            android:textSize="24sp"/>
-        <Button
-            android:id="@+id/btnLKLichSu"
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:text="Lịch sử"
-            android:backgroundTint="@color/blue"
-            android:layout_marginLeft="30dp"
-            android:textSize="24sp"/>
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+
+            <Button
+                android:id="@+id/btnTatCa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Tất cả"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#992071D3"/>
+            <Button
+                android:id="@+id/btnLichKham"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Lịch khám"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#CC2071D3" />
+            <Button
+                android:id="@+id/btnYTe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Y tế"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:backgroundTint="#2071D3" />
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/layoutContainer"
+        android:id="@+id/layoutContainerTB"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical" />
+        android:layout_marginTop="5dp"
+        android:layout_weight="8"
+        android:orientation="vertical"/>
+
 
 </LinearLayout>
