@@ -12,9 +12,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.adapter.BannerAdapter;
 import com.example.adapter.FunctionAdapter;
+import com.example.adapter.ViewTinTucAdapter;
+import com.example.model.Banner;
 import com.example.model.BookAppointment;
 import com.example.model.Function;
 import com.example.model.MyItemClick;
@@ -23,6 +27,9 @@ import com.example.wasabiapp.R;
 
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,15 +40,17 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.wasabiapp.R;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FragmentHome#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class FragmentHome extends Fragment {
+    View view;
+    private RecyclerView rcvBanner;
+    private BannerAdapter bannerAdapter;
+    ArrayList<Banner> banners;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
     GridView gvFunction;
     TextView txtName,txtName2;
     ImageView imvThumb;
@@ -49,61 +58,47 @@ public class FragmentHome extends Fragment {
     FunctionAdapter adapter;
 
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public FragmentHome() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FragmentHome.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static FragmentHome newInstance(String param1, String param2) {
-        FragmentHome fragment = new FragmentHome();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view=inflater.inflate(R.layout.fragment_home,container,false);
+//        return inflater.inflate(R.layout.fragment_home, container, false);
+        view = inflater.inflate(R.layout.fragment_home, container, false);
+        rcvBanner = view.findViewById(R.id.rcvBanner);
+        bannerAdapter = new BannerAdapter(banners);
+        LinearLayoutManager manager = new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false);
+        rcvBanner.setLayoutManager(manager);
+        rcvBanner.setAdapter(bannerAdapter);
+        initData();
+        tabLayout = view.findViewById(R.id.tab_layout);
+        viewPager = view.findViewById(R.id.view_paper);
+        ViewTinTucAdapter viewTinTucAdapter = new ViewTinTucAdapter(getChildFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+        viewPager.setAdapter(viewTinTucAdapter);
+        tabLayout.setupWithViewPager(viewPager);
+
+//
+//        // Inflate the layout for this fragment
+//        View view=inflater.inflate(R.layout.fragment_home,container,false);
         gvFunction=view.findViewById(R.id.gvFunction);
         imvThumb=view.findViewById(R.id.imvThumb);
         txtName=view.findViewById(R.id.txtName);
         txtName2=view.findViewById(R.id.txtName2);
-        adapter=new FunctionAdapter((Activity) getContext(),R.layout.item_function,initData());
+        adapter=new FunctionAdapter((Activity) getContext(),R.layout.item_function,initData2());
         gvFunction.setAdapter(adapter);
         return view;
     }
-
-    private ArrayList<Function> initData() {
+    private void initData() {
+        //khởi tạo dữ liệu
+        banners = new ArrayList<>();
+        banners.add(new Banner(R.drawable.nf1));
+        banners.add(new Banner(R.drawable.nf2));
+        banners.add(new Banner(R.drawable.nf3));
+        banners.add(new Banner(R.drawable.nf4));
+        banners.add(new Banner(R.drawable.nf5));
+        bannerAdapter = new BannerAdapter(banners);
+        rcvBanner.setAdapter(bannerAdapter);
+    }
+    private ArrayList<Function> initData2() {
         functions=new ArrayList<>();
         functions.add(new Function(R.drawable.bacsi,"Đặt khám","Bác sĩ"));
         functions.add(new Function(R.drawable.chuyenkhoa,"Đặt khám","Chuyên khoa"));
@@ -112,5 +107,16 @@ public class FragmentHome extends Fragment {
         functions.add(new Function(R.drawable.tuvan,"Tư vấn","Y tế online"));
         functions.add(new Function(R.drawable.diendan,"Diễn đàn","Y tế"));
         return functions;
+    }
+
+
+
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        FragmentManager fragmentManagerList = getChildFragmentManager();
+        FragmentTransaction fragmentTransactionList = fragmentManagerList.beginTransaction();
+        fragmentTransactionList.replace(R.id.view_paper, new FragmentTinTuc());
+        fragmentTransactionList.commit();
     }
 }

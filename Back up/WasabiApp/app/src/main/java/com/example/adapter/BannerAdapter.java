@@ -15,15 +15,15 @@ import com.example.wasabiapp.R;
 import java.util.ArrayList;
 
 public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.ViewHolder> {
-    Context context;
     ArrayList<Banner> banners;
-    public BannerAdapter(Context context, ArrayList<Banner> banners) {
-        this.context = context;
+
+    public BannerAdapter(ArrayList<Banner> banners) {
         this.banners = banners;
     }
+
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public BannerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //phương thức dùng để nạp giao diện
         LayoutInflater inflater=LayoutInflater.from(parent.getContext());
         View customView= inflater.inflate(R.layout.item_banner,parent,false);
@@ -33,9 +33,10 @@ public class BannerAdapter extends RecyclerView.Adapter<BannerAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull BannerAdapter.ViewHolder holder, int position) {
         // truyền dữ liệu
+        final Banner banner = banners.get(position);
+        if (banner == null) { return; }
         holder.imvThumb.setImageResource(banners.get(position).getBannerThumb());
     }
-
     @Override
     public int getItemCount()  {
         return banners.size();
