@@ -2,7 +2,10 @@ package com.example.wasabiapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.example.adapter.ChuyenKhoa1Adapter;
@@ -22,6 +25,7 @@ public class BookingSpecialist1 extends AppCompatActivity {
         linkViews();
         initData();
         loadData();
+        addEvents();
     }
 
     private void linkViews() {
@@ -47,5 +51,15 @@ public class BookingSpecialist1 extends AppCompatActivity {
     private void loadData() {
         chuyenKhoa1Adapter=new ChuyenKhoa1Adapter(BookingSpecialist1.this,R.layout.item_chuyen_khoa_1,chuyenKhoa1);
         gvChuyenKhoa.setAdapter(chuyenKhoa1Adapter);
+    }
+
+    private void addEvents() {
+        gvChuyenKhoa.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(BookingSpecialist1.this,BookingSpecialist2.class);
+                startActivity(intent);
+            }
+        });
     }
 }
