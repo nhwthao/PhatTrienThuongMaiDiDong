@@ -88,10 +88,6 @@
                     android:text="Thôn Bình An, xã Đlieya, KrongNa, DakLak"
                     />
             </LinearLayout>
-
         </LinearLayout>
-
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>

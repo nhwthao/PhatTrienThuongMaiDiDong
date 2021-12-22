@@ -31,8 +31,6 @@ public class FragmentBookAppointment extends Fragment implements MyItemClick {
         addEvent();
         return view;
 
-
-
     }
 
 

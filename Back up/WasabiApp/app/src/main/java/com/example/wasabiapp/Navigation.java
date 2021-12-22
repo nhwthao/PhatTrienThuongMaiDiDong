@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.adapter.ViewPagerAdapter;
+import com.example.model.MyItemClick;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Navigation extends AppCompatActivity {

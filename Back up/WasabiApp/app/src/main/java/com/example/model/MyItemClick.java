@@ -1,6 +1,9 @@
 package com.example.model;
 
-public interface MyItemClick {
+import com.example.fragment.FragmentBookAppointment;
+
+public interface MyItemClick  {
 
     public void click(BookAppointment bookAppointment);
+
 }

@@ -168,9 +168,6 @@
                 android:layout_height="60dp"
                 android:src="@drawable/arrow_right"
                 android:background="@drawable/botronnuaphai" />
-
-
         </LinearLayout>
-
     </LinearLayout>
 </LinearLayout>

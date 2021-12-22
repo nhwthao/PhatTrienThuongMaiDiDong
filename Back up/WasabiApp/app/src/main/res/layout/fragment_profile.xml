@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:background="@color/background">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frFragmentProfile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@color/background"
+        android:id="@+id/lnFragmentProfile">
 
     <TextView
         android:layout_width="match_parent"
@@ -15,6 +22,7 @@
         android:textStyle="bold"
         android:gravity="center" />
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -28,16 +36,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
-            <ImageButton
+            <ImageView
+                android:id="@+id/imvAvatarProfile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/avatar"
-                android:scaleType="fitCenter"
-                android:backgroundTint="@color/white"/>
-            <ImageButton
+                android:scaleType="fitCenter"/>
+            <ImageView
+                android:id="@+id/imvChangeAvatarProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/white"
                 android:src="@drawable/change_circle"/>
         </LinearLayout>
 
@@ -48,30 +56,32 @@
             android:layout_marginLeft="10dp">
 
             <TextView
+                android:id="@+id/txtNameProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Họ và tên: Nguyễn Văn A"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
             <TextView
+                android:id="@+id/txtSDTProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="SĐT: 09820610"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Giới tính: Nữ"
-                android:textSize="16sp"/>
-            <TextView
+                android:id="@+id/txtDiaChiProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Địa chỉ: sô 95, Đường Kha Vạn Cân, Trường Thọ, Thủ Đức"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right">
                 <LinearLayout
+                    android:id="@+id/layoutDetailProfile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -84,16 +94,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Xem thêm"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textColor="@color/blue"
                         android:textStyle="italic"/>
                 </LinearLayout>
                 <LinearLayout
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:padding="5dp"
-                    android:id="@+id/layoutChinhSuaHSCN">
+                    android:id="@+id/layoutEditProfile">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -102,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Chỉnh sửa"
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:textColor="@color/blue"
                         android:textStyle="italic"/>
                 </LinearLayout>
@@ -131,7 +142,8 @@
                 android:text="Hồ sơ sức khỏe"
                 android:textSize="15sp"
                 android:drawableTop="@drawable/file_open"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/black"/>
         </LinearLayout>
 
         <LinearLayout
@@ -142,14 +154,15 @@
             android:gravity="center"
             android:backgroundTint="@color/pink"
             android:layout_marginLeft="50dp"
-            android:id="@+id/layoutTheoDoiSucKhoe">
+            android:id="@+id/layoutHealthTracking">
             <TextView
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:text="Theo dõi sức khỏe"
                 android:textSize="15sp"
                 android:drawableTop="@drawable/health_and_safety"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/black"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -161,18 +174,18 @@
         android:background="@drawable/shape_edittext"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Lịch khám gần đây:"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="9:00 Thứ 2 ngày 25/10/2021"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <LinearLayout
@@ -189,18 +202,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hồ sơ người thân"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="right">
+            android:gravity="right"
+            android:id="@+id/layoutAddProfile">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Thêm hồ sơ"
                 android:textColor="@color/blue"
                 android:textStyle="italic"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+

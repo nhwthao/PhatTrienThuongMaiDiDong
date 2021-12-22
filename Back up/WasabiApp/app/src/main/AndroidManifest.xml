@@ -10,12 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
         <activity
-            android:name=".ActivityLogout"
+            android:name=".ActivityHealthTracking"
             android:exported="true" />
-        <activity
-            android:name=".ActivityUser"
-            android:exported="true">
-        </activity>
         <activity
             android:name=".BookingClinic3"
             android:exported="true" />
@@ -100,10 +96,6 @@
         <activity
             android:name=".ActivityInsertPhoneNumber"
             android:exported="true" />
-        <activity
-            android:name=".ActivityHome"
-            android:exported="true">
-        </activity>
     </application>
 
 </manifest>

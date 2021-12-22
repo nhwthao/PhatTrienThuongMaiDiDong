@@ -16,6 +16,8 @@ import com.example.wasabiapp.R;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class FragmentBookAppointmentNewDetails extends Fragment {
     BookAppointment bookAppointment;
     TextView txtIdLk, txtDoctor, txtSDTDoctor, txtChuyenNganhDoctor, txtTime, txtAddress;
@@ -31,15 +33,17 @@ public class FragmentBookAppointmentNewDetails extends Fragment {
         txtChuyenNganhDoctor = view.findViewById(R.id.txtChuyenNganhDoctor);
         txtTime = view.findViewById(R.id.txtTime);
         txtAddress = view.findViewById(R.id.txtAddress);
+
         Bundle bundle = getArguments();
         if(bundle != null){
-            bookAppointment = (BookAppointment) bundle.getSerializable(Constant.SELECTED_ITEM);
-            txtIdLk.setText(bookAppointment.getBaId());
-            txtDoctor.setText(bookAppointment.getBaDoctor());
-            txtSDTDoctor.setText(bookAppointment.getBaSDTDoctor());
-            txtChuyenNganhDoctor.setText(bookAppointment.getBaChuyenNganhDoctor());
-            txtTime.setText(bookAppointment.getBaTime());
-            txtAddress.setText(bookAppointment.getBaAddress());
+            int id = bundle.getInt("id");
+            ArrayList<BookAppointment> bookAppointment = (ArrayList<BookAppointment>) bundle.getSerializable("bookAppointment");
+            txtIdLk.setText(bookAppointment.get(id).getBaId());
+            txtDoctor.setText(bookAppointment.get(id).getBaDoctor());
+            txtSDTDoctor.setText(bookAppointment.get(id).getBaSDTDoctor());
+            txtChuyenNganhDoctor.setText(bookAppointment.get(id).getBaChuyenNganhDoctor());
+            txtTime.setText(bookAppointment.get(id).getBaTime());
+            txtAddress.setText(bookAppointment.get(id).getBaAddress());
         }
         return view;
     }

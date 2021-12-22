@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.BookAppointmentAdapter;
 import com.example.model.BookAppointment;
@@ -21,18 +22,18 @@ import com.example.wasabiapp.R;
 import java.util.ArrayList;
 
 public class FragmentBookAppointmentHistory extends Fragment {
-    
+
     ListView lvBookAppointmentHistory;
-    TextView txtIdLK, txtTime, txtDoctor,txtSDTDoctor, txtChuyenNganhDoctor, txtAddress;
+    TextView txtIdLK, txtTime, txtDoctor, txtSDTDoctor, txtChuyenNganhDoctor, txtAddress;
     ArrayList<BookAppointment> bookAppointments;
     BookAppointmentAdapter bookAppointmentAdapter;
-    MyItemClick itemClick;
-    
+    //MyItemClick itemClick;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_book_appointment_history, container, false);
-        
+
         lvBookAppointmentHistory = view.findViewById(R.id.lvBookAppointmentHistory);
         txtIdLK = view.findViewById(R.id.txtIdLk);
         txtTime = view.findViewById(R.id.txtTime);
@@ -40,42 +41,38 @@ public class FragmentBookAppointmentHistory extends Fragment {
         txtSDTDoctor = view.findViewById(R.id.txtSDTDoctor);
         txtChuyenNganhDoctor = view.findViewById(R.id.txtChuyenNganhDoctor);
         txtAddress = view.findViewById(R.id.txtAddress);
-        
-        bookAppointmentAdapter = new BookAppointmentAdapter(getContext(), R.layout.itemlist_booking_appointment_history, initData());
+
+        bookAppointments = new ArrayList<>();
+        bookAppointments.add(new BookAppointment("0001", "9h Thứ hai 20/12/2021", "BS.Lê Đình B", "0909090909", "Khoa Tai Mũi Họng", "Bệnh viện Phạm Ngọc Thạch"));
+        bookAppointments.add(new BookAppointment("0002", "9h Thứ hai 20/12/2021", "BS.Lê Đình B", "0909090909", "Khoa Tai Mũi Họng", "Bệnh viện Phạm Ngọc Thạch"));
+        bookAppointments.add(new BookAppointment("0003", "9h Thứ hai 20/12/2021", "BS.Lê Đình B", "0909090909", "Khoa Tai Mũi Họng", "Bệnh viện Phạm Ngọc Thạch"));
+        bookAppointments.add(new BookAppointment("0004", "9h Thứ hai 20/12/2021", "BS.Lê Đình B", "0909090909", "Khoa Tai Mũi Họng", "Bệnh viện Phạm Ngọc Thạch"));
+        bookAppointments.add(new BookAppointment("0005", "9h Thứ hai 20/12/2021", "BS.Lê Đình B", "0909090909", "Khoa Tai Mũi Họng", "Bệnh viện Phạm Ngọc Thạch"));
+
+
+        bookAppointmentAdapter = new BookAppointmentAdapter(getContext(), R.layout.itemlist_booking_appointment_new, bookAppointments);
         lvBookAppointmentHistory.setAdapter(bookAppointmentAdapter);
 
         lvBookAppointmentHistory.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(getResources().getConfiguration().orientation== Configuration.ORIENTATION_PORTRAIT){
-                    itemClick = (MyItemClick) getActivity();
-                    if(itemClick !=null){
-                        itemClick.click(bookAppointments.get(i));
-                    }else {
-                        txtIdLK.setText(bookAppointments.get(i).getBaId());
-                        txtDoctor.setText(bookAppointments.get(i).getBaDoctor());
-                        txtSDTDoctor.setText(bookAppointments.get(i).getBaSDTDoctor());
-                        txtChuyenNganhDoctor.setText(bookAppointments.get(i).getBaChuyenNganhDoctor());
-                        txtTime.setText(bookAppointments.get(i).getBaTime());
-                        txtAddress.setText(bookAppointments.get(i).getBaAddress());
-                    }
-                }
+                transferData(i);
             }
-
         });
 
         return view;
     }
 
+    public void transferData(int i) {
 
-    private ArrayList<BookAppointment> initData() {
-        bookAppointments = new ArrayList<>();
-        bookAppointments.add(new BookAppointment("0001", "9h Thứ hai 20/12/2021", "BS.Lê Đình B","0909090909","Khoa Tai Mũi Họng","Bệnh viện Phạm Ngọc Thạch"));
-        bookAppointments.add(new BookAppointment("0002", "9h Thứ hai 20/12/2021", "BS.Lê Đình B","0909090909","Khoa Tai Mũi Họng","Bệnh viện Phạm Ngọc Thạch"));
-        bookAppointments.add(new BookAppointment("0003", "9h Thứ hai 20/12/2021", "BS.Lê Đình B","0909090909","Khoa Tai Mũi Họng","Bệnh viện Phạm Ngọc Thạch"));
-        bookAppointments.add(new BookAppointment("0004", "9h Thứ hai 20/12/2021", "BS.Lê Đình B","0909090909","Khoa Tai Mũi Họng","Bệnh viện Phạm Ngọc Thạch"));
-        bookAppointments.add(new BookAppointment("0005", "9h Thứ hai 20/12/2021", "BS.Lê Đình B","0909090909","Khoa Tai Mũi Họng","Bệnh viện Phạm Ngọc Thạch"));
-        bookAppointments.add(new BookAppointment("0006", "9h Thứ hai 20/12/2021", "BS.Lê Đình B","0909090909","Khoa Tai Mũi Họng","Bệnh viện Phạm Ngọc Thạch"));
-        return bookAppointments;
+        FragmentBookAppointmentNewDetails fragment = new FragmentBookAppointmentNewDetails();
+        Bundle bundle = new Bundle();
+        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        bundle.putInt("id", i);
+        bundle.putSerializable("bookAppointment", bookAppointments);
+        fragment.setArguments(bundle);
+        fragmentTransaction.replace(R.id.frLayout, fragment);
+        fragmentTransaction.commit();
+        //Toast.makeText(getActivity(),"test",Toast.LENGTH_SHORT).show();
     }
 }
