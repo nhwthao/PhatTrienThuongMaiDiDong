@@ -20,7 +20,7 @@ public class FragmentLogout extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_user, container, false);
+        View view = inflater.inflate(R.layout.fragment_logout, container, false);
         btnYes = view.findViewById(R.id.btnYes);
         btnNo = view.findViewById(R.id.btnNo);
         addEvents();
