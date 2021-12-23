@@ -38,9 +38,14 @@ public class ActivityLoginAndRegister extends AppCompatActivity {
     }
 
     private void addEvents() {
-//        btnDangnhap.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
+
+
+        btnDangnhap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ActivityLoginAndRegister.this, Navigation.class);
+                startActivity(intent);
+
 //                if(edtTaikhoan.getText().length() !=0 && edtMatkhau.getText().length() !=0){
 //                    if(edtTaikhoan.getText().toString().equals("0856228468") && edtMatkhau.getText().toString().equals("123456")){
 //                        Intent intent = new Intent(ActivityLoginAndRegister.this, HomeActivity.class);
@@ -53,8 +58,9 @@ public class ActivityLoginAndRegister extends AppCompatActivity {
 //                    Toast.makeText(ActivityLoginAndRegister.this, "Bạn phải điền đầy đủ thông tin đăng nhập", Toast.LENGTH_SHORT).show();
 //                }
 //
-//            }
-//        });
+            }
+        });
+
         layoutQuenmatkhau.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wasabiapp">
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -39,36 +39,28 @@
         <activity
             android:name=".BookingHospital"
             android:exported="true"
-            android:screenOrientation="portrait" >
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingClinic"
             android:exported="true"
-            android:screenOrientation="portrait" >
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingDoctor"
             android:exported="true"
-            android:screenOrientation="portrait" >
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingSpecialist2"
             android:exported="true"
-            android:screenOrientation="portrait" >
-
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".BookingSpecialist1"
             android:exported="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ActivityLoginAndRegister"
+            android:name=".Navigation"
             android:exported="true" />
         <activity
-            android:name=".Navigation"
+            android:name=".ActivityLoginAndRegister"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -84,9 +76,7 @@
             android:exported="true" />
         <activity
             android:name=".ActivityRegister"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ActivityNewPassword"
             android:exported="true" />
@@ -96,6 +86,17 @@
         <activity
             android:name=".ActivityInsertPhoneNumber"
             android:exported="true" />
+        <activity
+            android:name=".NhanTinTuVan"
+            android:exported="true" />
+        <activity
+            android:name=".DienDanYTe"
+            android:exported="true" />
+
+        <activity
+            android:name=".TuVanYTeOnline"
+            android:exported="true" />
+
     </application>
 
 </manifest>

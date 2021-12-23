@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NhanTinTuVan"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imvBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_keyboard_double_arrow_left_24"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/back"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/icondiendan" />
+
+            <TextView
+                android:id="@+id/txtXinChao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botrontinnhan"
+                android:text="  Xin Chào !"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_nhaptinnhan"
+        android:paddingBottom="3dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_nhaptinnhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/imvHinhAnh"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconhinhanh"
+            android:background="#ffffff"/>
+        <ImageView
+            android:id="@+id/imvCamxuc"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconcamxuc"
+            android:background="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:hint="Nhập câu hỏi của bạn"
+            android:background="#ffffff"/>
+
+        <ImageButton
+            android:id="@+id/imvSend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconsend"
+            android:background="#ffffff"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

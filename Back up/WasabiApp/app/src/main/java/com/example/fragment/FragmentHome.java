@@ -1,15 +1,15 @@
 package com.example.fragment;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.AdapterView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
@@ -19,27 +19,24 @@ import com.example.adapter.BannerAdapter;
 import com.example.adapter.FunctionAdapter;
 import com.example.adapter.ViewTinTucAdapter;
 import com.example.model.Banner;
-import com.example.model.BookAppointment;
 import com.example.model.Function;
-import com.example.model.MyItemClick;
-import com.example.utils.Constant;
+import com.example.wasabiapp.BookingClinic;
+import com.example.wasabiapp.BookingDoctor;
+import com.example.wasabiapp.BookingHospital;
+import com.example.wasabiapp.BookingSpecialist1;
+import com.example.wasabiapp.DienDanYTe;
 import com.example.wasabiapp.R;
 
 
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.wasabiapp.R;
+import com.example.wasabiapp.TuVanYTeOnline;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -56,6 +53,7 @@ public class FragmentHome extends Fragment {
     ImageView imvThumb;
     ArrayList<Function> functions;
     FunctionAdapter adapter;
+
 
 
     @Override
@@ -85,6 +83,45 @@ public class FragmentHome extends Fragment {
         txtName2=view.findViewById(R.id.txtName2);
         adapter=new FunctionAdapter((Activity) getContext(),R.layout.item_function,initData2());
         gvFunction.setAdapter(adapter);
+        gvFunction.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View v,
+                                    int position, long id) {
+                // DO something
+                Object o = gvFunction.getItemAtPosition(position);
+                Function function = (Function) o;
+                Intent intent;
+                switch (function.getFunctionName2()){
+                    case "Bác sĩ":
+                         intent = new Intent(getActivity(), BookingDoctor.class);
+                        startActivity(intent);
+                        break;
+                    case "Chuyên khoa":
+                         intent = new Intent(getActivity(), BookingSpecialist1.class);
+                        startActivity(intent);
+                        break;
+                    case "Bệnh viện":
+                         intent = new Intent(getActivity(), BookingHospital.class);
+                        startActivity(intent);
+                        break;
+                    case "Phòng khám":
+                         intent = new Intent(getActivity(), BookingClinic.class);
+                        startActivity(intent);
+                        break;
+                    case "Y tế online":
+                        intent = new Intent(getActivity(), TuVanYTeOnline.class);
+                        startActivity(intent);
+                        break;
+                    case "Y tế":
+                        intent = new Intent(getActivity(), DienDanYTe.class);
+                        startActivity(intent);
+                        break;
+                }
+
+
+            }
+        });
+
         return view;
     }
     private void initData() {
@@ -99,6 +136,7 @@ public class FragmentHome extends Fragment {
         rcvBanner.setAdapter(bannerAdapter);
     }
     private ArrayList<Function> initData2() {
+
         functions=new ArrayList<>();
         functions.add(new Function(R.drawable.bacsi,"Đặt khám","Bác sĩ"));
         functions.add(new Function(R.drawable.chuyenkhoa,"Đặt khám","Chuyên khoa"));

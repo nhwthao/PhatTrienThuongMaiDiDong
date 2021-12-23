@@ -2,7 +2,10 @@ package com.example.wasabiapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -10,48 +13,87 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.adapter.ViewPagerAdapter;
+import com.example.fragment.FragmentHome;
+import com.example.fragment.FragmentNotification;
+import com.example.fragment.FragmentProfile;
+import com.example.fragment.FragmentTBLichKham;
+import com.example.fragment.FragmentUser;
 import com.example.model.MyItemClick;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Navigation extends AppCompatActivity {
-    private ViewPager viewPager;
+    private ViewPager viewPager_home;
     private BottomNavigationView bottomNavigationView;
+    int FragmentHome = 0;
+    int FragmentCalendar = 1;
+    int FragmentFile = 2;
+    int FragmentNotice = 3;
+    int FragmentUser = 4;
+    int CurrentFragment = FragmentHome;
+    BottomNavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-
-        viewPager = findViewById(R.id.view_paper);
-        bottomNavigationView = findViewById(R.id.bottom_nav);
-
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), FragmentStatePagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        viewPager.setAdapter(adapter);
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.action_home:
-                        viewPager.setCurrentItem(0);
-                        break;
-                    case R.id.action_calendar:
-                        viewPager.setCurrentItem(1);
-                        break;
-                    case R.id.action_profile:
-                        viewPager.setCurrentItem(2);
-                        break;
-                    case R.id.action_notification:
-                        viewPager.setCurrentItem(3);
-                        break;
-                    case R.id.action_person:
-                        viewPager.setCurrentItem(4);
-                        break;
-                }
-                return true;
-            }
-
+        navigationView = findViewById(R.id.bottom_nav);
+        navigationView.setOnItemSelectedListener(item -> {
+            swapScreen(item);
+            return false;
         });
+        Fragment previousFragment = new FragmentHome();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.view_paper_nav, previousFragment);
+        fragmentTransaction.commit();
 
+    }
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.view_paper_nav, fragment).addToBackStack("my_fragment");
+        fragmentTransaction.commit();
+    }
+
+    private void swapScreen(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_home:
+                if (FragmentHome != CurrentFragment) {
+                    replaceFragment(new FragmentHome());
+                    CurrentFragment = FragmentHome;
+                    navigationView.getMenu().findItem(R.id.action_home).setChecked(true);
+                }
+                break;
+            case R.id.action_calendar:
+                if (FragmentCalendar != CurrentFragment) {
+                    replaceFragment(new FragmentTBLichKham());
+                    CurrentFragment = FragmentCalendar;
+                    navigationView.getMenu().findItem(R.id.action_calendar).setChecked(true);
+                }
+                break;
+
+            case R.id.action_profile:
+                if (FragmentFile != CurrentFragment) {
+                    replaceFragment(new FragmentProfile());
+                    CurrentFragment = FragmentFile;
+                    navigationView.getMenu().findItem(R.id.action_profile).setChecked(true);
+                }
+                break;
+
+            case R.id.action_notification:
+                if (FragmentNotice != CurrentFragment) {
+                    replaceFragment(new FragmentNotification());
+                    CurrentFragment = FragmentNotice;
+                    navigationView.getMenu().findItem(R.id.action_notification).setChecked(true);
+                }
+                break;
+            case R.id.action_person:
+                if (FragmentUser != CurrentFragment) {
+                    replaceFragment(new FragmentUser());
+                    CurrentFragment = FragmentUser;
+                    navigationView.getMenu().findItem(R.id.action_person).setChecked(true);
+                }
+                break;
+        }
     }
 }
