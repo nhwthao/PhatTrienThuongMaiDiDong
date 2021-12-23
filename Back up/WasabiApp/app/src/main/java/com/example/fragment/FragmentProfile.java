@@ -1,10 +1,14 @@
 package com.example.fragment;
 
 import android.content.Intent;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,6 +25,7 @@ public class FragmentProfile extends Fragment {
 
     LinearLayout layoutDetailProfile, layoutEditProfile, layoutHealthTracking;
     TextView txtNameProfile, txtSDTProfile,txtDiaChiProfile;
+    ImageView imvChangeAvatarProfile;
 
     public FragmentProfile(){
 
@@ -39,6 +44,8 @@ public class FragmentProfile extends Fragment {
         txtNameProfile = view.findViewById(R.id.txtNameProfile);
         txtSDTProfile = view.findViewById(R.id.txtSDTProfile);
         txtDiaChiProfile = view.findViewById(R.id.txtDiaChiProfile);
+
+        imvChangeAvatarProfile = view.findViewById(R.id.imvChangeAvatarProfile);
 
         addEvents();
         getInformation();
@@ -74,6 +81,13 @@ public class FragmentProfile extends Fragment {
             }
         });
 
+        imvChangeAvatarProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
+            }
+        });
     }
     private void getInformation() {
         Bundle bundle = getArguments();
