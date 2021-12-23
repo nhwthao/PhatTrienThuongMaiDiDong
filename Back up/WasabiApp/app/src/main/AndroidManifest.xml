@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.wasabiapp">
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WasabiApp">
+        <activity
+            android:name=".BookingNoticate"
+            android:exported="true" />
         <activity
             android:name=".ActivityHealthTracking"
             android:exported="true" />
@@ -92,11 +97,9 @@
         <activity
             android:name=".DienDanYTe"
             android:exported="true" />
-
         <activity
             android:name=".TuVanYTeOnline"
             android:exported="true" />
-
     </application>
 
 </manifest>

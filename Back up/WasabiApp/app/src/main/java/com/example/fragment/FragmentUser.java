@@ -1,8 +1,6 @@
 package com.example.fragment;
 
 import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -31,22 +29,19 @@ import com.example.wasabiapp.R;
 import com.example.wasabiapp.R;
 
 public class FragmentUser extends Fragment {
-    LinearLayout lnLogout, lnHotline, lnShare;
+    LinearLayout lnLogout;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_user, container, false);
         lnLogout = view.findViewById(R.id.lnLogout);
-        lnHotline = view.findViewById(R.id.lnHotline);
-        lnShare = view.findViewById(R.id.lnShare);
         addEvents();
         return view;
     }
 
 
     private void addEvents() {
-        //nút đăng xuất
         lnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,21 +49,6 @@ public class FragmentUser extends Fragment {
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
                 transaction.replace(R.id.frUser, fragmentLogout);
                 transaction.commit();
-            }
-        });
-        // nút gọi hotline
-        lnHotline.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:" + "1900 2077"));
-                startActivity(callIntent);
-            }
-        });
-        lnShare.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
             }
         });
 

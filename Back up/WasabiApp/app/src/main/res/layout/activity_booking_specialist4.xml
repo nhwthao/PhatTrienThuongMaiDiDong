@@ -191,7 +191,8 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/botron_text" />
+                    android:background="@drawable/botron_text"
+                    android:id="@+id/edtDay"/>
             </LinearLayout>
 
             <TextView
@@ -213,6 +214,7 @@
                     android:src="@drawable/ic_time" />
 
                 <EditText
+                    android:id="@+id/edtHour"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/botron_text" />
@@ -237,6 +239,7 @@
                     android:src="@drawable/ic_hoso" />
 
                 <EditText
+                    android:id="@+id/edtName"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/botron_text" />
@@ -262,6 +265,7 @@
                     android:src="@drawable/ic_note" />
 
                 <EditText
+                    android:id="@+id/edtDescription"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/botron_text" />
@@ -286,11 +290,12 @@
                     android:background="@drawable/botronimage"
                     android:gravity="center">
 
-                    <ImageButton
+                    <ImageView
+                        android:id="@+id/imvPhoto"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:background="@color/white"
-                        android:src="@drawable/ic_up_image" />
+                        />
                 </LinearLayout>
 
                 <LinearLayout
@@ -301,6 +306,7 @@
                     android:gravity="center">
 
                     <ImageButton
+                        android:id="@+id/imbGallery"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:src="@drawable/ic_add_photo" />
@@ -313,7 +319,7 @@
         </LinearLayout>
     </ScrollView>
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnDatLich"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/ButtonColor"
