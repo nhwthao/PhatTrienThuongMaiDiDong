@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,7 @@ public class FragmentLogout extends Fragment {
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Đồng ý đăng xuất, chuyển đến màn hình đăng nhập ban đầu
                 Intent intent = new Intent(getActivity(), ActivityLoginAndRegister.class);
                 startActivity(intent);
             }
@@ -40,7 +42,11 @@ public class FragmentLogout extends Fragment {
         btnNo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                //Không đăng xuất, quay về fragment user
+                FragmentUser fragmentReturn = new FragmentUser();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.frUser,fragmentReturn );
+                transaction.commit();
             }
         });
     }

@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:background="@color/white"
-                        android:text="ho ten"
+                        android:text="Họ và tên: Nguyễn Văn A"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -70,7 +70,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:background="@color/white"
-                        android:text="Ngay sinh"
+                        android:text="NNgày sinh: 27/01/2001"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:background="@color/white"
-                        android:text="SDT"
+                        android:text="SĐT: 0362723421"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -88,7 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:background="@color/white"
-                        android:text="Gioi tinh:"
+                        android:text="Giới tính: Nam"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -97,7 +97,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:background="@color/white"
-                        android:text="Dia chi"
+                        android:text="Địa chỉ: Dĩ An, Bình Dương"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
@@ -128,7 +128,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnDSQT"
+                        android:id="@+id/txtDSQT"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -150,7 +150,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnCSBM"
+                        android:id="@+id/txtCSBM"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -173,7 +173,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnTGCD"
+                        android:id="@+id/txtTGCD"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -196,7 +196,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnDKQD"
+                        android:id="@+id/txtDKQD"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -219,7 +219,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnCHTG"
+                        android:id="@+id/txtCHTG"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -242,7 +242,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnQuyTrinh"
+                        android:id="@+id/txtQuyTrinh"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -257,6 +257,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/lnShare"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
@@ -265,7 +266,7 @@
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnShare"
+                        android:id="@+id/txtShare"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
@@ -282,13 +283,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:id="@+id/lnHotline"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/botronnuatrai"
                     android:gravity="left">
 
                     <TextView
                         android:padding="10dp"
-                        android:id="@+id/btnHotline"
+                        android:id="@+id/txtHotline"
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
