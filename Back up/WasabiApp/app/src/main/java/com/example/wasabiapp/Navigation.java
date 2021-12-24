@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.adapter.ViewPagerAdapter;
+import com.example.fragment.FragmentBookAppointment;
 import com.example.fragment.FragmentHome;
 import com.example.fragment.FragmentNotification;
 import com.example.fragment.FragmentProfile;
@@ -25,7 +26,7 @@ public class Navigation extends AppCompatActivity {
     private ViewPager viewPager_home;
     private BottomNavigationView bottomNavigationView;
     int FragmentHome = 0;
-    int FragmentCalendar = 1;
+    int FragmentBookAppointment = 1;
     int FragmentFile = 2;
     int FragmentNotice = 3;
     int FragmentUser = 4;
@@ -65,9 +66,9 @@ public class Navigation extends AppCompatActivity {
                 }
                 break;
             case R.id.action_calendar:
-                if (FragmentCalendar != CurrentFragment) {
-                    replaceFragment(new FragmentTBLichKham());
-                    CurrentFragment = FragmentCalendar;
+                if (FragmentBookAppointment != CurrentFragment) {
+                    replaceFragment(new FragmentBookAppointment());
+                    CurrentFragment = FragmentBookAppointment;
                     navigationView.getMenu().findItem(R.id.action_calendar).setChecked(true);
                 }
                 break;

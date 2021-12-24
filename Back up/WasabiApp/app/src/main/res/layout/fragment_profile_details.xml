@@ -13,14 +13,27 @@
         android:background="@color/background"
         android:padding="10dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CHI TIẾT HỒ SƠ CÁ NHÂN"
-            android:textSize="30sp"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:gravity="center" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/imbBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:background="@color/background"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHI TIẾT HỒ SƠ CÁ NHÂN"
+                android:textSize="26sp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,23 +43,18 @@
             android:layout_marginTop="10dp">
 
             <ImageView
-                android:id="@+id/imvAvatarPD"
+                android:id="@+id/imvAvatarProfile"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/avatar"
                 android:scaleType="fitCenter" />
 
-            <ImageView
-                android:id="@+id/imvChangeAvatarPD"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/change_circle"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
                 android:gravity="center">
 
                 <LinearLayout
@@ -128,32 +136,15 @@
                 android:layout_gravity="left"
                 android:background="@drawable/shape_edittext"
                 android:padding="5dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/txtNamePD"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/txtNamePD"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Họ và tên: Nguyễn Văn A"
-                        android:layout_marginStart="15dp"
-                        android:textSize="18sp"
-                        android:textColor="@color/black"/>
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="55dp"
-                        android:id="@+id/layoutEditPD">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Chỉnh sửa"
-                            android:textColor="@color/blue"
-                            android:textStyle="italic"/>
-                    </LinearLayout>
-
-                </LinearLayout>
+                    android:text="Họ và tên: Nguyễn Văn A"
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:padding="5dp"/>
                 <TextView
                     android:id="@+id/txtNgaySinhPD"
                     android:layout_width="wrap_content"
@@ -161,7 +152,8 @@
                     android:text="Ngày sinh:27/20/2001"
                     android:layout_marginStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
                 <TextView
                     android:id="@+id/txtSDTPD"
                     android:layout_width="wrap_content"
@@ -169,7 +161,8 @@
                     android:text="SĐT: 098206110"
                     android:layout_marginStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
                 <TextView
                     android:id="@+id/txtGioiTinhPD"
                     android:layout_width="wrap_content"
@@ -177,7 +170,8 @@
                     android:text="Giới tính: Nam"
                     android:layout_marginStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
                 <TextView
                     android:id="@+id/txtDiaChiPD"
                     android:layout_width="wrap_content"
@@ -185,7 +179,8 @@
                     android:text="Địa chỉ: số 95, Đường Kha Vạn Cân, Trường Thọ, Thủ Đức"
                     android:layout_marginStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
                 <TextView
                     android:id="@+id/txtEmailPD"
                     android:layout_width="wrap_content"
@@ -193,18 +188,9 @@
                     android:text="Gmail: wasabi@gmail.com"
                     android:layout_marginStart="15dp"
                     android:textColor="@color/black"
-                    android:textSize="18sp"/>
+                    android:textSize="20sp"
+                    android:padding="5dp"/>
             </LinearLayout>
         </LinearLayout>
-        <Button
-            android:id="@+id/btnOKProfileDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OKE"
-            android:textSize="20sp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="@color/blue"/>
     </LinearLayout>
-
 </FrameLayout>

@@ -1,5 +1,6 @@
 package com.example.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.wasabiapp.ActivityLoginAndRegister;
 import com.example.wasabiapp.R;
 
 
@@ -31,7 +33,8 @@ public class FragmentLogout extends Fragment {
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(getActivity(), ActivityLoginAndRegister.class);
+                startActivity(intent);
             }
         });
         btnNo.setOnClickListener(new View.OnClickListener() {

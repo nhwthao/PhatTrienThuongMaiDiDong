@@ -117,8 +117,6 @@ public class FragmentHome extends Fragment {
                         startActivity(intent);
                         break;
                 }
-
-
             }
         });
 

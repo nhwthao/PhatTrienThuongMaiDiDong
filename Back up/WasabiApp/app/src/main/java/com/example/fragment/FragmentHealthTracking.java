@@ -11,37 +11,33 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.fragment.FragmentProfile;
 import com.example.wasabiapp.R;
 
+public class FragmentHealthTracking extends Fragment {
 
-public class FragmentProfileDetails extends Fragment {
+    ImageButton imbBack;
 
-    ImageButton imBack;
+    public FragmentHealthTracking() {
 
-    public FragmentProfileDetails() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_profile_details, container, false);
 
-        imBack = view.findViewById(R.id.imbBack);
+        View view = inflater.inflate(R.layout.fragment_health_tracking, container, false);
 
-        returnFragment();
-
-        return view;
-    }
-
-    private void returnFragment() {
-        imBack.setOnClickListener(new View.OnClickListener() {
+        imbBack = view.findViewById(R.id.imbBack);
+        imbBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FragmentProfile fragmentProfile = new FragmentProfile();
                 FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.frFragmentProfileDetail, fragmentProfile);
+                transaction.replace(R.id.frHealthTracking, fragmentProfile);
                 transaction.commit();
             }
         });
+        return view;
     }
 }
