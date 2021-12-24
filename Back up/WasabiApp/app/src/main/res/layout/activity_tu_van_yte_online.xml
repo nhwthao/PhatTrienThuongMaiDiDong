@@ -179,7 +179,7 @@
                     android:text="Đặt khám"
                     android:layout_gravity="end"
                     android:layout_marginEnd="20dp"
-                    android:backgroundTint="@color/white"
+                    android:backgroundTint="#119DDC"
                     />
             </LinearLayout>
         </LinearLayout>
