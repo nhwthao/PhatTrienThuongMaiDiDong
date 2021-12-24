@@ -8,19 +8,13 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.model.BookAppointment;
-import com.example.model.MyItemClick;
-import com.example.utils.Constant;
 import com.example.wasabiapp.R;
 
-public class FragmentBookAppointment extends Fragment implements MyItemClick {
+public class FragmentBookAppointment extends Fragment {
     Button btnLKMoiNhat, btnLKLichSu;
-    private FragmentManager manager;
 
     @Nullable
     @Override
@@ -55,19 +49,4 @@ public class FragmentBookAppointment extends Fragment implements MyItemClick {
         }
     };
 
-    @Override
-    public void click(BookAppointment bookAppointment) {
-        FragmentTransaction transaction = manager.beginTransaction();
-        FragmentBookAppointmentNewDetails bookAppointmentNewDetails = new FragmentBookAppointmentNewDetails();
-
-
-        Bundle bundle = new Bundle();
-        bundle.putSerializable(Constant.SELECTED_ITEM, bookAppointment);
-        bookAppointmentNewDetails.setArguments(bundle);
-
-        transaction.replace(R.id.layoutContainer,bookAppointmentNewDetails);
-        transaction.addToBackStack(null);
-        transaction.commit();
-
-    }
 }

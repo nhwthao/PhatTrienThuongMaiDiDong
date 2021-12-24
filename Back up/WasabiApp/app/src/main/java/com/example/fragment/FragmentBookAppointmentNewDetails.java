@@ -11,15 +11,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.model.BookAppointment;
-import com.example.utils.Constant;
 import com.example.wasabiapp.R;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
 public class FragmentBookAppointmentNewDetails extends Fragment {
-    BookAppointment bookAppointment;
+
     TextView txtIdLk, txtDoctor, txtSDTDoctor, txtChuyenNganhDoctor, txtTime, txtAddress;
 
     @Nullable

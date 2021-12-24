@@ -1,6 +1,5 @@
 package com.example.fragment;
 
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.adapter.BookAppointmentAdapter;
 import com.example.model.BookAppointment;
-import com.example.model.MyItemClick;
 import com.example.wasabiapp.R;
 
 import java.util.ArrayList;
@@ -27,7 +25,6 @@ public class FragmentBookAppointmentHistory extends Fragment {
     TextView txtIdLK, txtTime, txtDoctor, txtSDTDoctor, txtChuyenNganhDoctor, txtAddress;
     ArrayList<BookAppointment> bookAppointments;
     BookAppointmentAdapter bookAppointmentAdapter;
-    //MyItemClick itemClick;
 
     @Nullable
     @Override

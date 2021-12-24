@@ -93,6 +93,7 @@
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_booking_hospital3.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_booking_specialist1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_booking_specialist2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_booking_specialist4.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_edit_profile.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_health_tracking.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
@@ -103,6 +104,8 @@
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_logout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_navigation.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_new_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_news.xml" value="0.1" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_news_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_profile.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_profile_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_profile_edit.xml" value="0.25416666666666665" />
@@ -112,7 +115,7 @@
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/bottom_sheet.xml" value="0.12360688956433637" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/dialog_view.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_book_appointment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_book_appointment.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_book_appointment_detail.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_book_appointment_history.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_book_appointment_new.xml" value="0.1" />
@@ -132,6 +135,8 @@
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_hospital_infor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_hospital_rate.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_logout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_news_details.xml" value="0.11203703703703703" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_news_details2.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_notice.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_notification.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_profile.xml" value="0.4" />
@@ -141,16 +146,18 @@
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_tbtat_ca.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_tby_te.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_tin_cua_ban.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_tin_tuc.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_tin_tuc.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/fragment_user.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_banner.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_benhvien.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_booking.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_chuyen_khoa_1.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_doctor.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_function.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/item_phongkham.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/itemlist_booking_appointment_history.xml" value="0.264" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/itemlist_booking_appointment_new.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/layout/itemlist_news.xml" value="0.13934426229508196" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/Back up/WasabiApp/app/src/main/res/menu/bottom_nav.xml" value="0.1" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/WasabiApp/app/src/main/res/drawable-v24/botron_imv.xml" value="0.2703125" />
         <entry key="..\:/Users/Administrator/BaiTap/WasabiApp/PhatTrienThuongMaiDiDong/WasabiApp/app/src/main/res/drawable/bo_address.xml" value="0.2703125" />

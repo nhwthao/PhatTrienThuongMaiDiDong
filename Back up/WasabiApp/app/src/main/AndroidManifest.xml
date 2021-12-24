@@ -3,7 +3,7 @@
     package="com.example.wasabiapp">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -70,8 +70,7 @@
         </activity>
         <activity
             android:name=".ActivityLoginAndRegister"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".ActivityInsertOTPRegister"
             android:exported="true" />

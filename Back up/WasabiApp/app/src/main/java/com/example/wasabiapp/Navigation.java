@@ -1,28 +1,26 @@
 package com.example.wasabiapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
-import com.example.adapter.ViewPagerAdapter;
 import com.example.fragment.FragmentBookAppointment;
 import com.example.fragment.FragmentHome;
+import com.example.fragment.FragmentNewsDetails;
 import com.example.fragment.FragmentNotification;
 import com.example.fragment.FragmentProfile;
-import com.example.fragment.FragmentTBLichKham;
 import com.example.fragment.FragmentUser;
 import com.example.model.MyItemClick;
+import com.example.model.News;
+import com.example.utils.Constant;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Navigation extends AppCompatActivity {
+public class Navigation extends AppCompatActivity implements MyItemClick {
     private ViewPager viewPager_home;
     private BottomNavigationView bottomNavigationView;
     int FragmentHome = 0;
@@ -96,5 +94,20 @@ public class Navigation extends AppCompatActivity {
                 }
                 break;
         }
+    }
+
+    @Override
+    public void click(News n) {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        com.example.fragment.FragmentNewsDetails fragmentNewsDetails = new FragmentNewsDetails();
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable(Constant.SELECTED_ITEM, n);
+        fragmentNewsDetails.setArguments(bundle);
+
+        transaction.replace(R.id.view_paper_nav, fragmentNewsDetails);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

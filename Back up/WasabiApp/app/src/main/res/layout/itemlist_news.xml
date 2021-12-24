@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/imvNewsPhoto"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/bacsi"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/txtNewsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đây là tiêu đề bài viết"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tác giả:"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="italic"/>
+            <TextView
+                android:id="@+id/txtNewsAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thu Sương"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtNewsSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đây là nội dung tóm tắt bài viết"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

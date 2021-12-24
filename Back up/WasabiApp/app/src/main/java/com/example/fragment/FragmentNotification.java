@@ -12,8 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.model.BookAppointment;
-import com.example.model.MyItemClick;
 import com.example.wasabiapp.R;
 
 public class FragmentNotification extends Fragment {
