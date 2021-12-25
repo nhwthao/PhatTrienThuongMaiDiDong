@@ -21,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_vertical"
             android:layout_marginStart="10dp">
@@ -29,7 +29,7 @@
                 android:id="@+id/txtTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đây là tiêu đề bài viết"
+                android:text="Thích ứng nhưng phải cảnh giác, kiểm soát tốt dịch bệnh"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 android:textColor="@color/blue"/>
@@ -58,7 +58,7 @@
                 android:id="@+id/txtContent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Đây là nội dung  bài viết"
+                android:text="(Chinhphu.vn) - Chủ tịch nước Nguyễn Xuân Phúc cho biết phương thức hiện nay đã không còn 'không COVID', chuyển sang thích ứng với COVID-19 bằng những biện pháp như 5K, vaccine, thuốc. “Nói như vậy để không được chủ quan, không đơn giản hoá, thích ứng nhưng có kiểm soát tốt, phải đề cao cảnh giác”."
                 android:textSize="20sp"
                 android:textColor="@color/black"
                 android:layout_marginTop="15dp"/>

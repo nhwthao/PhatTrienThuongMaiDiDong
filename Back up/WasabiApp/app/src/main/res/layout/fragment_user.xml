@@ -70,7 +70,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:background="@color/white"
-                        android:text="NNgày sinh: 27/01/2001"
+                        android:text="Ngày sinh: 27/01/2001"
                         android:textAlignment="textStart"
                         android:textColor="@color/black" />
 
