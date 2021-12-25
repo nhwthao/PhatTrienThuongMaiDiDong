@@ -18,9 +18,10 @@ import java.util.Random;
 
 public class ActivityInsertOTPNewPass extends AppCompatActivity {
     EditText edtNhapOTP;
-    private LinearLayout layoutGuilaima;
+    private LinearLayout layoutGuilaimaPwd;
     Button btnXacNhan;
     int otpCode = 0;
+    //int otpCodenew = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,7 @@ public class ActivityInsertOTPNewPass extends AppCompatActivity {
     }
     private void linkViews() {
         edtNhapOTP = findViewById(R.id.edtNhapOTP);
-        layoutGuilaima = findViewById(R.id.layoutGuilaima);
+        layoutGuilaimaPwd = findViewById(R.id.layoutGuilaimaPwd);
         btnXacNhan = findViewById(R.id.btnXacNhan);
     }
 
@@ -50,11 +51,20 @@ public class ActivityInsertOTPNewPass extends AppCompatActivity {
                     }
                     Intent i = getIntent();
                     List<User> userList = (List<User>) i.getSerializableExtra("userList");
-                    Intent intent = new Intent(ActivityInsertOTPNewPass.this, ActivityWelcome.class);
+                    Intent intent = new Intent(ActivityInsertOTPNewPass.this, ActivityNewPassword.class);
                     intent.putExtra("userList", (Serializable) userList);
                     startActivity(intent);
                 }else
                     Toast.makeText(ActivityInsertOTPNewPass.this, "Bạn chưa nhập mã OTP", Toast.LENGTH_SHORT).show();
+            }
+        });
+        layoutGuilaimaPwd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //otpCodenew = new Random().nextInt(900000) + 100000;
+                //gửi lại OTP lúc nãy nếu chưa nhìn thấy kịp
+                Toast.makeText(ActivityInsertOTPNewPass.this, String.format("Mã OTP của bạn là %s", otpCode), Toast.LENGTH_LONG).show();
+
             }
         });
     }

@@ -30,15 +30,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/layoutGuilaima">
+        android:id="@+id/layoutGuilaimaPwd">
         <TextView
-            android:id="@+id/btnGuiLaiMaOTP"
+            android:id="@+id/txtGuiLaiMaOTPPwd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gửi lại mã"
             android:textSize="20sp"
             android:textStyle="italic"
-            android:textColor="@color/black"/>
+            android:textColor="@color/purple_700" />
     </LinearLayout>
     <Button
         android:id="@+id/btnXacNhan"
