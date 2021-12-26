@@ -18,7 +18,7 @@ import java.util.Random;
 
 public class ActivityInsertOTPRegister extends AppCompatActivity {
     EditText edtNhapOTPDangKy;
-    private LinearLayout layoutGuilaimaRegister;
+    private LinearLayout layoutGuilaima;
     Button btnXacNhanDangKy;
     int otpCode = 0;
 
@@ -35,7 +35,7 @@ public class ActivityInsertOTPRegister extends AppCompatActivity {
     }
     private void linkViews() {
         edtNhapOTPDangKy = findViewById(R.id.edtNhapOTPDangKy);
-        layoutGuilaimaRegister = findViewById(R.id.layoutGuilaimaRegister);
+        layoutGuilaima = findViewById(R.id.layoutGuilaima);
         btnXacNhanDangKy = findViewById(R.id.btnXacNhanDangKy);
 
     }
@@ -56,15 +56,6 @@ public class ActivityInsertOTPRegister extends AppCompatActivity {
                     startActivity(intent);
                 }else
                     Toast.makeText(ActivityInsertOTPRegister.this, "Bạn chưa nhập mã OTP", Toast.LENGTH_SHORT).show();
-            }
-        });
-        layoutGuilaimaRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //otpCode = new Random().nextInt(900000) + 100000;
-                //gửi lại OTP lúc nãy nếu chưa nhìn thấy kịp
-                Toast.makeText(ActivityInsertOTPRegister.this, String.format("Mã OTP của bạn là %s", otpCode), Toast.LENGTH_LONG).show();
-
             }
         });
     }

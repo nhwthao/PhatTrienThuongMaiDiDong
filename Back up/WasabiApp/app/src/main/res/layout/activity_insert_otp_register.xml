@@ -11,11 +11,11 @@
     android:gravity="center_vertical">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nhập mã OTP:"
-        android:textSize="24sp"
-        android:textColor="@color/black"/>
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nhập mã OTP:"
+    android:textSize="24sp"
+    android:textColor="@color/black"/>
     <EditText
         android:id="@+id/edtNhapOTPDangKy"
         android:layout_width="match_parent"
@@ -30,9 +30,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/layoutGuilaimaRegister">
+        android:id="@+id/layoutGuilaima">
         <TextView
-            android:id="@+id/txtGuiLaiMaOTPRegister"
+            android:id="@+id/btnGuiLaiMaOTP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Gửi lại mã"

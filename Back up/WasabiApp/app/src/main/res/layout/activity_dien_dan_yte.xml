@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DienDanYTe"
-    android:background="@drawable/background">
+    android:background="@color/background">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -53,20 +53,14 @@
                     android:src="@drawable/ic_baseline_location_on_24" />
             </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/imvBack"
-                android:layout_width="wrap_content"
-                android:layout_height="29dp"
-                android:backgroundTint="#E2F2FA"
-                android:src="@drawable/ic_add_reaction" />
-
             <TextView
+                android:padding="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
                 android:text="Diễn đàn y tế Online"
-                android:textColor="@color/black"
+                android:textColor="@color/blue"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -74,7 +68,7 @@
                 android:id="@+id/lvDienDan"
                 android:layout_width="match_parent"
                 android:layout_height="1000dp"
-                android:paddingBottom="20dp" />
+                android:layout_marginBottom="10dp" />
         </LinearLayout>
     </ScrollView>
 
@@ -126,3 +120,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
